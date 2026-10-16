@@ -1,0 +1,3271 @@
+[
+ {
+  "id": "c001",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "유체 물리적 성질",
+  "body": "  기체의 밀도 $\\rho\\ [kg/m^3] = \\dfrac{PM}{RT}$\n  1) $PV = M\\bar{R}T$, $PV = \\dfrac{w}{M}RT$ $[R = 8.314]$\n  2) $S \\xrightarrow{\\times 1000} \\rho \\xrightarrow{\\times 9.8} \\gamma$\n  3) 물의 밀도 $1000\\ [kg/m^3]$, 물의 비중량 $9800\\ [N/m^3]$",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c002",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "연속방정식",
+  "body": "  1) 질량유량: $\\dot{M} = \\rho A V\\ [kg/s]$\n  2) 중량유량: $\\dot{G} = \\gamma A V\\ [N/s]$\n  3) 체적유량: $\\dot{Q} = AV\\ [m^3/s]$",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c003",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "원형 관경 공식",
+  "body": "$$D\\ [m] = \\sqrt{\\frac{4Q}{\\pi V}}$$",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "D\\ [m] = \\sqrt{\\frac{4Q}{\\pi V}}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c004",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "병렬 관로계",
+  "body": "![p01_parallel_pipe](images-gpt/p01_parallel_pipe.png)\n\n_(그림: 병렬 배관 — 입구 $Q_T$, 분기 $Q_1 \\cdot Q_2 \\cdot Q_3$, 출구 $Q_T$)_\n\n$$Q_T = Q_1 + Q_2 + Q_3$$\n\n$$\\Delta p_1 = \\Delta p_2 = \\Delta p_3$$\n\n\\* 각 관로의 손실수두는 경로에 상관없이 모두 같다.",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q_T = Q_1 + Q_2 + Q_3",
+   "\\Delta p_1 = \\Delta p_2 = \\Delta p_3"
+  ],
+  "tables": [],
+  "images": [
+   "images-gpt/p01_parallel_pipe.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c005",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "베르누이 방정식",
+  "body": "$$\\frac{p_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 = \\frac{p_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2$$",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "\\frac{p_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 = \\frac{p_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c006",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "전양정 및 마찰손실을 고려한 수정 베르누이 방정식",
+  "body": "$$\\frac{p_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 + h_p = \\frac{p_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2 + h_L$$\n\n  $h_p$: 펌프유입 [m] (펌프 전양정을 뜻함)\n  $h_L$: 마찰손실 [m]",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "\\frac{p_1}{\\gamma} + \\frac{v_1^2}{2g} + z_1 + h_p = \\frac{p_2}{\\gamma} + \\frac{v_2^2}{2g} + z_2 + h_L"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c007",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "달시-웨버 방정식 [마찰손실 구하는 법]",
+  "body": "$$h_L\\ [m] = f \\times \\frac{L}{D} \\times \\frac{v^2}{2g}$$\n\n(층류일 때: $f = \\dfrac{64}{Re}$, $Re < 2100$)",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "h_L\\ [m] = f \\times \\frac{L}{D} \\times \\frac{v^2}{2g}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c008",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "하젠-윌리엄 공식 [마찰손실 압력 구하는 법]",
+  "body": "(원 표시: 소방전용공식)\n\n$$\\Delta p_m\\ [MPa] = 6.053 \\times 10^4 \\times \\frac{Q^{1.85}}{C^{1.85} \\times D^{4.87}} \\times L$$\n\n  $Q$: 유량 [LPM], $C$: 조도, $D$: 직경 [mm], $L$: 길이\n\n  \\* **tip** 수두 [m]를 압력 [Pa]로 바꾸는 법\n\n  ① $10.332\\ [m] = 101325\\ [Pa] = 1\\,atm$ (※ 수은 $760\\ [mmHg]$)  \n  ② $H = \\dfrac{p}{\\gamma}$ ∴ 액체의 비중량으로 나눈다. 물: 9800",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "\\Delta p_m\\ [MPa] = 6.053 \\times 10^4 \\times \\frac{Q^{1.85}}{C^{1.85} \\times D^{4.87}} \\times L"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c009",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "부차적 손실 (돌연 확대관 손실 수두)",
+  "body": "$$h_L = \\frac{(V_1 - V_2)^2}{2g} = K\\frac{V^2}{2g}\\qquad \\left[K = \\left(1 - \\frac{A_1}{A_2}\\right)^2\\right]$$\n\n  우항 $V$: 큰 속도 (좁은관 기준)",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "h_L = \\frac{(V_1 - V_2)^2}{2g} = K\\frac{V^2}{2g}\\qquad \\left[K = \\left(1 - \\frac{A_1}{A_2}\\right)^2\\right]"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c010",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "운동량 방정식 (노즐의 반발력)",
+  "body": "  1) 노즐의 반발력 (플랜지에 가하는 힘)\n\n$$F = p_1 A_1 - \\rho Q (V_2 - V_1)$$\n\n  2) 운동량에 의한 노즐의 반발력, 반동력\n\n$$F = \\rho Q (V_2 - V_1)$$\n\n  3) 노즐 구경, 방수압이 주어질 때\n\n$$F = 1.57 \\times D^2 \\times p$$",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "F = p_1 A_1 - \\rho Q (V_2 - V_1)",
+   "F = \\rho Q (V_2 - V_1)",
+   "F = 1.57 \\times D^2 \\times p"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c011",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 1. 소방유체 역학",
+  "group": "",
+  "title": "벤츄리 미터 및 오리피스 유량계",
+  "body": "$$Q = \\frac{A_2}{\\sqrt{1-\\left(\\dfrac{D_{작}}{D_{큰}}\\right)^4}} \\times \\sqrt{2gh\\left(\\frac{S_{큰}}{S_{작}} - 1\\right)} \\times C_d\\ (\\text{실제유량 시 넣음})$$\n$$ = K \\times A_t \\times\\sqrt{2gh\\left(\\frac{S_{큰}}{S_{작}} - 1\\right)} \\times C_d$$\n  직경비$^4$ = 면적비$^2$ , $\\left(\\dfrac{D_{작}}{D_{큰}}\\right)^4 = \\left(\\dfrac{A_{작}}{A_{큰}}\\right)^2$,  $K = C_d \\times \\dfrac{1}{\\sqrt{1-\\left(\\frac{A_2}{A_1}\\right)^2}}$ (K : 오리피스의 유동계수) ",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q = \\frac{A_2}{\\sqrt{1-\\left(\\dfrac{D_{작}}{D_{큰}}\\right)^4}} \\times \\sqrt{2gh\\left(\\frac{S_{큰}}{S_{작}} - 1\\right)} \\times C_d\\ (\\text{실제유량 시 넣음})",
+   "= K \\times A_t \\times\\sqrt{2gh\\left(\\frac{S_{큰}}{S_{작}} - 1\\right)} \\times C_d"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c012",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 2. 소방펌프",
+  "group": "",
+  "title": "유효흡입 양정 $NPSH_{av}$",
+  "body": "(펌프로 유입되는 유체 압력)\n\n$$NPSH_{av} = \\text{대기압} - \\text{마찰손실} - \\text{포화증기압} \\pm \\text{낙차}$$\n\n  (빨아올리면 −, 채워지면 +)",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "NPSH_{av} = \\text{대기압} - \\text{마찰손실} - \\text{포화증기압} \\pm \\text{낙차}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c013",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 2. 소방펌프",
+  "group": "",
+  "title": "필요흡입 양정 $NPSH_{re}$",
+  "body": "(펌프가 요하는 최소한의 유체 압력)\n\n$$NPSH_{av} \\geq NPSH_{re} \\times 1.3$$\n\n\\*$NPSH_{av}$가 $NPSH_{re}$보다 작으면 공동현상 발생.\n\n\\* P → z 변환식\n\n$$z\\ [m] = \\frac{P\\ [Pa]}{\\gamma\\ [N/m^3]}$$",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "NPSH_{av} \\geq NPSH_{re} \\times 1.3",
+   "z\\ [m] = \\frac{P\\ [Pa]}{\\gamma\\ [N/m^3]}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c014",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 2. 소방펌프",
+  "group": "",
+  "title": "펌프의 상사법칙",
+  "body": "|        | N (RPM) | D (임펠러) |\n| ------ | ------- | ------- |\n| Q (유량) | 1       | 3       |\n| H (양정) | 2       | 2       |\n| P (동력) | 3       | 5       |\n\n$$ Q_2 = \\left(\\frac{N_2}{N_1}\\right)^1 \\times \\left(\\frac{D_2}{D_1}\\right)^3 \\times Q_1$$\n\n$$H_2 = \\left(\\frac{N_2}{N_1}\\right)^2 \\times \\left(\\frac{D_2}{D_1}\\right)^2 \\times H_1$$\n\n$$P_2 = \\left(\\frac{N_2}{N_1}\\right)^3 \\times \\left(\\frac{D_2}{D_1}\\right)^5 \\times P_1$$",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q_2 = \\left(\\frac{N_2}{N_1}\\right)^1 \\times \\left(\\frac{D_2}{D_1}\\right)^3 \\times Q_1",
+   "H_2 = \\left(\\frac{N_2}{N_1}\\right)^2 \\times \\left(\\frac{D_2}{D_1}\\right)^2 \\times H_1",
+   "P_2 = \\left(\\frac{N_2}{N_1}\\right)^3 \\times \\left(\\frac{D_2}{D_1}\\right)^5 \\times P_1"
+  ],
+  "tables": [
+   {
+    "header": [
+     "",
+     "N (RPM)",
+     "D (임펠러)"
+    ],
+    "rows": [
+     [
+      "Q (유량)",
+      "1",
+      "3"
+     ],
+     [
+      "H (양정)",
+      "2",
+      "2"
+     ],
+     [
+      "P (동력)",
+      "3",
+      "5"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c015",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 2. 소방펌프",
+  "group": "",
+  "title": "비속도",
+  "body": ": 단위 배출유량 $[1 m^3 / min ]$은 단위양정 $[1 m]$ 양수하는 데 필요한 RPM\n\n$$N_s = \\frac{N\\sqrt{Q}}{\\left(\\frac{H}{n}\\right)^{3/4}}$$\n\n  N: rpm\n  Q: $[m^3/min]$\n  n: 단수",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "N_s = \\frac{N\\sqrt{Q}}{\\left(\\frac{H}{n}\\right)^{3/4}}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c016",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 2. 소방펌프",
+  "group": "",
+  "title": "펌프의 특성",
+  "body": "| | 직렬 | 병렬 |\n|---|---|---|\n| 토출량 | × | n |\n| 토출양정 | n | × |\n\n양정 = 직렬, 유량 = 병렬\n\n| | 볼류트 | 터빈 |\n|---|---|---|\n| 안내날개 | 무 | 유 |\n| 유량 | 대 | 소 |\n| 압력 | 저 | 고 |",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "",
+     "직렬",
+     "병렬"
+    ],
+    "rows": [
+     [
+      "토출량",
+      "×",
+      "n"
+     ],
+     [
+      "토출양정",
+      "n",
+      "×"
+     ]
+    ]
+   },
+   {
+    "header": [
+     "",
+     "볼류트",
+     "터빈"
+    ],
+    "rows": [
+     [
+      "안내날개",
+      "무",
+      "유"
+     ],
+     [
+      "유량",
+      "대",
+      "소"
+     ],
+     [
+      "압력",
+      "저",
+      "고"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c017",
+  "part": "Part1. 소방유체 역학",
+  "chapter": "ch 2. 소방펌프",
+  "group": "",
+  "title": "공동현상 (캐비테이션)",
+  "body": ": 높은양정, 유속의 증가에 의해 유체의 압력이 국부적으로 포화증기압 이하로 내려가 기포발생\n\n  1) 방지책\n    ① 흡입양정 ↓  \n    ② 관경을 크게 하여 유속 ↓  \n    ③ 회전속도 ↓  \n    ④ 양흡입 펌프 사용  \n    ⑤ 2대 이상의 펌프 사용  \n    ⑥ 흡입손실수두 ↓  \n    ⑦ 회전차를 수중에 완전히 잠기게 한다.  \n\n---",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c018",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "설치 대상",
+  "body": "  1) 소화기구: 연면적 33 m² 이상의 것\n  2) 자동소화장치: 주거용 주방자동소화장치 → 아파트 및 오피스텔의 모든층",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c019",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "소화기구의 종류 (자동확산 소화기)",
+  "body": "  1) 일반화재용 자동확산소화기, 주방화재용 자동확산소화기, 전기설비용 자동확산소화기 (일.주.전)\n  2) 간이소화용구: 에어로졸, 투척용, 소공간용, 이외 (팽창질석 등)  \n    마른모래: 삽을 상비한 50L 이상의 것 1포  \n    팽창질석 및 팽창진주암: 삽을 상비한 80L 이상의 것 1포  \n    (마른모래·팽창질석 모두 0.5단위)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c020",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "자동소화장치의 종류",
+  "body": "    ① 주거용 주방자동소화장치　 ④ 가스 자동소화장치  \n    ② 상업용 주방 자동소화장치　⑤ 고체에어로졸 자동소화장치  \n    ③ 캐비닛형 자동소화장치　     ⑥ 분말 자동소화장치  \n  ※ 주상캐 가고분(분) — 주거용·상업용·캐비닛형 / 가스·고체에어로졸·분말 앞글자",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c021",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "소화기구 (소화기 능력단위에 의한 분류)",
+  "body": "| 구분    | 능력단위                       | 보행거리   |\n| ----- | -------------------------- | ------ |\n| 소형소화기 | 1단위 이상 대형소화기 미만            | 20m 이내 |\n| 대형소화기 | A급: 10단위 이상<br>B급: 20단위 이상 | 30m 이내 |",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "능력단위",
+     "보행거리"
+    ],
+    "rows": [
+     [
+      "소형소화기",
+      "1단위 이상 대형소화기 미만",
+      "20m 이내"
+     ],
+     [
+      "대형소화기",
+      "A급: 10단위 이상<br>B급: 20단위 이상",
+      "30m 이내"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c022",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "축압식 소화기",
+  "body": "  용기 내 약제와 함께 축압가스(질소)를 가압한 방식\n  압력계 설치 ($0.7 \\sim 0.98\\ [\\text{MPa}]$)\n  3종 인산암모늄 ($\\text{NH}_4\\text{H}_2\\text{PO}_4$) 주로 사용",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c023",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "소화기 설치 기준",
+  "body": "  1) 각층마다 설치 + 바닥면적 33m² 이상으로 구획된 각 거실\n  2) 보행거리: 소형 20m 이내, 대형 30m 이내\n  3) 설치높이: 바닥으로부터 1.5m 이하, 주차장의 경우 1.5m 이상\n  > ⚠️ 검수: NFTC 101 기준은 \"바닥으로부터 높이 1.5m 이하의 곳에 비치\"이며, 주차장에 대해 \"1.5m 이상\"으로 하는 예외 규정은 확인되지 않습니다. 출처를 확인하세요. (원문: 주차장의 경우 1.5m 이상)",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c024",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "이산화탄소 또는 할로겐화합물 소화기구 설치제외 장소",
+  "body": ": 지하층, 무창층, 밀폐된 거실로 바닥면적이 20m² 미만의 장소",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c025",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "특정소방대상물별 소화기구의 능력단위 ★",
+  "body": "  1) 위락시설: 바닥면적 30m²마다, 능력단위 1 이상\n  2) 공·집·관·문·의·장(공연장·집회장·관람장·문화재·의료시설·장례시설): 바닥면적 50m²마다 능력단위 1 이상\n  3) 근생·판매·숙박·노유자, 전시실·업무·창고·자동차관련: 바닥면적 100m²마다 능력단위 1 이상\n  4) 그 밖의 것: 바닥면적 200m²마다 능력단위 1 이상\n  \\* 내화·불연·난연재료의 경우 바닥면적 ×2",
+  "star": true,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c026",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 1. 소화기구",
+  "group": "",
+  "title": "부속 용도별 추가 해야할 소화기구 및 자동소화장치 ★",
+  "body": "| 용도별 | 소화기구의 능력단위 |\n|---|---|\n| 가. 보일러실<br>나. ~의 주방<br>다. 관리자의 출입이 곤란한 변전실, 송전실, 변압기실 및 배전반실 | 1. 25m²마다 능력단위 1 이상의 소화기<br>2. 자동확산소화기는 10m² 이하는 1개, 10m² 초과는 2개 이상 |\n| 발전실, 변전실, 송전실, 변압기실, 배전반실, 통신기기실, 전산기기실 등 | 50m²마다 적응성 있는 소화기 1개 이상 |\n\n---",
+  "star": true,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "용도별",
+     "소화기구의 능력단위"
+    ],
+    "rows": [
+     [
+      "가. 보일러실<br>나. ~의 주방<br>다. 관리자의 출입이 곤란한 변전실, 송전실, 변압기실 및 배전반실",
+      "1. 25m²마다 능력단위 1 이상의 소화기<br>2. 자동확산소화기는 10m² 이하는 1개, 10m² 초과는 2개 이상"
+     ],
+     [
+      "발전실, 변전실, 송전실, 변압기실, 배전반실, 통신기기실, 전산기기실 등",
+      "50m²마다 적응성 있는 소화기 1개 이상"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c027",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "계통도 (펌프방식)",
+  "body": "→ 숙지",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c028",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "옥내소화전 수원의 양 (전용수원, 지하수원) ★",
+  "body": "$$Q = N \\times 130\\ [\\text{LPM}] \\times 20\\ \\text{min}$$\n\n| 층수            | 수원의 양                         |\n| ------------- | ----------------------------- |\n| 29층 이하        | N (최대 ==2개==) × 130 × ==20분== |\n| 30층 이상 49층 이하 | N (최대 5개) × 130 × ==40분==     |\n| 50층 이상        | N (최대 5개) × 130 × ==60분==     |\n\n  _(우측 메모: 단, 창고는 무조건 N=2, 40분)_",
+  "star": true,
+  "review": false,
+  "formulas": [
+   "Q = N \\times 130\\ [\\text{LPM}] \\times 20\\ \\text{min}"
+  ],
+  "tables": [
+   {
+    "header": [
+     "층수",
+     "수원의 양"
+    ],
+    "rows": [
+     [
+      "29층 이하",
+      "N (최대 2개) × 130 × 20분"
+     ],
+     [
+      "30층 이상 49층 이하",
+      "N (최대 5개) × 130 × 40분"
+     ],
+     [
+      "50층 이상",
+      "N (최대 5개) × 130 × 60분"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c029",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "방수압력",
+  "body": ": ==0.17== [MPa] 이상 0.7 [MPa] 이하\n  _(메모: 고압 시 감압방법 → (중·고·감·전) = 중계펌프, 고가수조, 감압밸브, 전용배관)_",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c030",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "옥상수조 수원의 양 및 설치제외 기준",
+  "body": "  옥상수조 수원의 양 = 유효수량 × $\\frac{1}{3}$ 이상\n  \\* 제외 기준\n    1) 지하층만 있는 건축물\n    2) 고가수조를 사용 (또는 가압수조)\n    3) 수원이 건축물 최상층 방수구보다 높은 경우\n    4) 건축물의 높이가 10m 이하인 경우\n\n  \\*★ 옥상수조를 반드시 설치하여야 하는 설비 ★\n    1) 옥내소화전 설비　\n    2) 스프링클러설비　\n    3) 화재조기진압용 스프링클러설비",
+  "star": true,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c031",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "기동용 수압 개폐 장치 (압력챔버)",
+  "body": "  배관 내 **압력 변동**을 검지하여 자동적으로 **펌프를 기동 및 정지** (주펌프는 수동정지)\n  용적 **100L** 이상\n  _(메모: 20분 이상 작동)_",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c032",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "펌프의 전양정 (전 = 실 + 마 + 방)",
+  "body": "$$H_{전} = \\text{실양정}\\,(\\text{낙차}) + \\text{마찰손실수두} + \\text{방사압}\\,(17\\ \\text{m})$$\n\n  \\* $1\\ \\text{m} = 0.01\\ \\text{MPa}$,                      ex) 옥내소화전 방사압 0.17 MPa = 17 m",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "H_{전} = \\text{실양정}\\,(\\text{낙차}) + \\text{마찰손실수두} + \\text{방사압}\\,(17\\ \\text{m})"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c033",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "성능시험곡선",
+  "body": "| 구분   | Q        | H             |\n| ---- | -------- | ------------- |\n| 체절운전 | 0        | **140%** 초과 × |\n| 정격운전 | 100%     | 100% ↑        |\n| 최대운전 | **150%** | **65% ↑**     |\n\n  ![p02_pump_curve](images-gpt/p02_pump_curve.png)\n\n  _(그림: H–Q 성능곡선. 체절점 H 140%, 정격점 Q 100%·H 100%, 최대운전점 Q 150%·H 65%. 하단 배관도: 1차측·2차측, 개폐밸브, 유량계, 유량조절밸브, 성능시험배관)_",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "Q",
+     "H"
+    ],
+    "rows": [
+     [
+      "체절운전",
+      "0",
+      "140% 초과 ×"
+     ],
+     [
+      "정격운전",
+      "100%",
+      "100% ↑"
+     ],
+     [
+      "최대운전",
+      "150%",
+      "65% ↑"
+     ]
+    ]
+   }
+  ],
+  "images": [
+   "images-gpt/p02_pump_curve.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c034",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "주펌프 와 충압 펌프",
+  "body": "| 구분 | 주펌프 | 충압 펌프 |\n|---|---|---|\n| 설치목적 | 소화수 공급 | 주펌프의 빈번한 기동 방지 (배관내 압력유지) |\n| 성능시험배관, 순환배관 | 필요 | 불필요 |\n\n  \\* 예비펌프 설치가능\n  ※ 충압 펌프의 토출압력: 자연낙차압 + 0.2MPa 또는 주펌프와 동등",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "주펌프",
+     "충압 펌프"
+    ],
+    "rows": [
+     [
+      "설치목적",
+      "소화수 공급",
+      "주펌프의 빈번한 기동 방지 (배관내 압력유지)"
+     ],
+     [
+      "성능시험배관, 순환배관",
+      "필요",
+      "불필요"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c035",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "펌프의 동력",
+  "body": "$$P\\ [\\text{kW}] = \\frac{\\gamma Q H}{\\eta} \\times K$$\n\n  ![p02_pump_power](images-gpt/p02_pump_power.png)\n\n  _(그림 주석 라벨: 수동력 = $\\gamma QH$, 축동력 = $\\frac{\\gamma QH}{\\eta}$, 전동력 = $\\frac{\\gamma QH}{\\eta}\\times K$)_\n\n  γ: 9.8 [kN/m³]\n  Q: 유량 [m³/s]\n  H: 전양정 [m]\n  K: 전달계수\n\n  \\* 전효율 $\\eta = \\eta_h \\times \\eta_v \\times \\eta_m$ (수력효율 × 체적효율 × 기계효율) 다 곱한다.",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "P\\ [\\text{kW}] = \\frac{\\gamma Q H}{\\eta} \\times K"
+  ],
+  "tables": [],
+  "images": [
+   "images-gpt/p02_pump_power.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c036",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "옥내소화전 설비의 배관구경 ★★★",
+  "body": "| 구분 | 주배관 (4m/s) | 가지배관 |\n|---|---|---|\n| 일반적 방식 | 50mm 이상 | 40mm 이상 |\n| 연결송수관 겸용 | 100mm 이상 | 65mm 이상 |\n\n  \\* 주배관 유속은 **4 m/s** 이하로 제한, **V = 4** 대입",
+  "star": true,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "주배관 (4m/s)",
+     "가지배관"
+    ],
+    "rows": [
+     [
+      "일반적 방식",
+      "50mm 이상",
+      "40mm 이상"
+     ],
+     [
+      "연결송수관 겸용",
+      "100mm 이상",
+      "65mm 이상"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c037",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "펌프의 성능시험 배관",
+  "body": "  1) 토출측 입상 메인배관 기준:  **개폐 밸브 이전**에 설치,\n  2) 유량계 기준 설치 밸브 종류\n    전단 직관부 : **개폐밸브** / 후단 직관부 : **유량조절밸브**  \n    \\* 호칭지름은 유량측정장치(유량계) 호칭지름.\n  3) 유량측정장치는 펌프의 **정격토출량의 175% 이상**까지 측정할 수 있을 것\n\n  ![p03_test_pipe](images-gpt/p03_test_pipe.png)\n\n  _(그림: 수평 배관 위에 개폐밸브·유량계·유량조절밸브를 차례로 배치한 배관도. 하단 표기 \"개폐밸브\", \"유량조절밸브\")_",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [
+   "images-gpt/p03_test_pipe.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c038",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "순환배관",
+  "body": "  1) 목적 : 체절운전시, 수온의 상승방지 (+과압방지)\n  2) 구경 및 개방압력 : 20mm 이상, 체절압력 미만(140%)에서 개방되는 릴리프 밸브를 설치",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c039",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "송수구",
+  "body": "  1) 송수구 - 주배관의 연결배관에는 개폐밸브 X\n  2) 설치높이 : **소방관 높이 (0.5m 이상 1m 이하)**\n  3) 65mm 쌍구형 또는 단구형 사용 (단구형은 옥내소화전만 가능)\n  4) 설치순서 : 송수구 - 자동배수 밸브 - 체크밸브 (송자체)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c040",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "방수구",
+  "body": "  1) 설치기준 : 방수구 수평거리 **25m** 이하\n  2) 설치 높이 : 바닥으로부터 1.5m 이하\n  3) 호스 구경 : **40mm (가지배관 구경과 동일)**",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c041",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "방수량 공식 ★★",
+  "body": "$$Q = 2.086 \\times D^2 \\times \\sqrt{P}$$\n\n  Q : LPM  \n  D : mm  \n  P : MPa  \n\n  → 소방전용 공식",
+  "star": true,
+  "review": false,
+  "formulas": [
+   "Q = 2.086 \\times D^2 \\times \\sqrt{P}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c042",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "\\* 방수량 공식 비교 ★★★",
+  "body": "  $Q = 2.086 \\cdot D^2 \\cdot \\sqrt{P}$   → Q, D, P  \n  $Q = k\\sqrt{10P}$   → Q, P  \n  → 위 두 식 : 소방전용 공식(LPM, mm, MPa)  \n  $D = \\sqrt{\\frac{4Q}{\\pi V}}$\n  → Q, D, V — S.I 단위($m^3/s$, M, m/s)",
+  "star": true,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c043",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "\\* 유효수량",
+  "body": "  ![p03_effective_water](images-gpt/p03_effective_water.png)\n\n  _(그림: 수조 단면도. 수면 아래 높이가 다른 두 개의 흡입구(⊠ 표시)와 각 흡입구 높이의 점선, 그 사이 구간을 묶어 화살표로 연결)_\n\n$$Q = N \\times 130 \\times 20$$",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q = N \\times 130 \\times 20"
+  ],
+  "tables": [],
+  "images": [
+   "images-gpt/p03_effective_water.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c044",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 2. 옥내소화전 설비",
+  "group": "",
+  "title": "\\* 물올림장치",
+  "body": "  100L 이상 수조 사용\n  15mm 이상 급수배관 보충\n\n---",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c045",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 3. 옥외소화전 설비",
+  "group": "",
+  "title": "수원의 양",
+  "body": "$$Q = N \\times 350 \\ [\\text{LPM}] \\times 20 \\ [\\text{min}]$$\n\n  N : 최대 2개\n  방수압 : **0.25** MPa 이상 0.7 [MPa] 이하",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q = N \\times 350 \\ [\\text{LPM}] \\times 20 \\ [\\text{min}]"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c046",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 3. 옥외소화전 설비",
+  "group": "",
+  "title": "배관",
+  "body": "  1) 호스접결구 : 지면으로부터 0.5m 이상 1m 이하, 수평거리 40m 이하\n  2) 호스구경 : 65mm\n  3) 구경 : 호스구경 65mm / 노즐구경 19mm / 옥내노즐 13mm",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c047",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 3. 옥외소화전 설비",
+  "group": "",
+  "title": "옥외소화전 함 ★",
+  "body": "  1) 위치 : 옥외소화전 5m 이내 설치\n  2) 옥외소화전 함 설치개수\n\n| 옥외소화전 | 옥외소화전 함의 개수 |\n|---|---|\n| 10개 이하 | 옥외소화전마다 5m 이내 1개 이상 |\n| 11 ~ 30개 이하 | 11개 이상 |\n| 31개 이상 | 옥외소화전 3개마다 1개 이상 → 옥외소화전 1/3 |\n\n---",
+  "star": true,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "옥외소화전",
+     "옥외소화전 함의 개수"
+    ],
+    "rows": [
+     [
+      "10개 이하",
+      "옥외소화전마다 5m 이내 1개 이상"
+     ],
+     [
+      "11 ~ 30개 이하",
+      "11개 이상"
+     ],
+     [
+      "31개 이상",
+      "옥외소화전 3개마다 1개 이상 → 옥외소화전 1/3"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c048",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "스프링클러 설비의 종류",
+  "body": "  _(밸브 종류 열 위 메모 : ~ 유수검지장치)_\n\n| 구분 | 밸브 1차측 | 밸브 2차측 | 헤드종류 | 밸브 종류 | 표기호 | 감지기 유무 |\n|---|---|---|---|---|---|---|\n| 습식 | 가압수 | 가압수 | 폐쇄형 (감열체 ○) | 알람체크밸브 | 배관선 위 원 안에 반쯤 칠한 삼각형 | × |\n| 건식 | 가압수 | 압축공기 | 폐쇄형 (감열체 ○) | 드라이 밸브 | 배관선 위 원 안에 빈 삼각형 | × |\n| 준비작동식 | 가압수 | 대기압 | 폐쇄형 (감열체 ○) | 프리액션 밸브 | 배관선 위 원 안에 \"P\"가 든 삼각형 | ○ |\n| 부압식 | 가압수 | 부압수 | 폐쇄형 (감열체 ○) | 프리액션 밸브 | 배관선 위 원 안에 \"P\"가 든 삼각형 (준비작동식과 유사) | ○ |\n| 일제살수식 | 가압수 | 대기압 | 개방형 (감열체 ×) | 일제개방 밸브 (델류지 밸브) | 사각형 안에 칠한 삼각형 + \"D\" | ○ |",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "밸브 1차측",
+     "밸브 2차측",
+     "헤드종류",
+     "밸브 종류",
+     "표기호",
+     "감지기 유무"
+    ],
+    "rows": [
+     [
+      "습식",
+      "가압수",
+      "가압수",
+      "폐쇄형 (감열체 ○)",
+      "알람체크밸브",
+      "배관선 위 원 안에 반쯤 칠한 삼각형",
+      "×"
+     ],
+     [
+      "건식",
+      "가압수",
+      "압축공기",
+      "폐쇄형 (감열체 ○)",
+      "드라이 밸브",
+      "배관선 위 원 안에 빈 삼각형",
+      "×"
+     ],
+     [
+      "준비작동식",
+      "가압수",
+      "대기압",
+      "폐쇄형 (감열체 ○)",
+      "프리액션 밸브",
+      "배관선 위 원 안에 \"P\"가 든 삼각형",
+      "○"
+     ],
+     [
+      "부압식",
+      "가압수",
+      "부압수",
+      "폐쇄형 (감열체 ○)",
+      "프리액션 밸브",
+      "배관선 위 원 안에 \"P\"가 든 삼각형 (준비작동식과 유사)",
+      "○"
+     ],
+     [
+      "일제살수식",
+      "가압수",
+      "대기압",
+      "개방형 (감열체 ×)",
+      "일제개방 밸브 (델류지 밸브)",
+      "사각형 안에 칠한 삼각형 + \"D\"",
+      "○"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c049",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "습식 스프링클러 설비",
+  "body": ": 화재 대응 속도가 빠르다.",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c050",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "건식 스프링클러 설비",
+  "body": ": 동파의 우려가 없다. + 급속개방기구\n  \\* 급속개방기구 : 엑셀레이터, 익저스터  ",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c051",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "준비작동식 스프링클러설비",
+  "body": ": 교차회로방식의 감지기를 통해 준비작동식 밸브(프리액션밸브)를 작동시킴 (1차측 : 가압수, 2차측 : 대기압)\n  \\* 교차회로 방식 : 2 이상의 화재감지기 회로를 설치하고, 인접한 2 이상의 화재감지기가 동시에 감지될 때 작동\n  예) 준비작동식, 일제살수식, 가스계 소화설비 (CO2, 할로겐…)  ",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c052",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "일제살수식 스프링클러",
+  "body": ": 개방형 헤드, 일제개방밸브(델류지 밸브) + 감지기",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c053",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "폐쇄형 스프링클러 방호구역 및 유수검지장치",
+  "body": "  1) 바닥면적 : 3000 [m²] 초과하지 않을 것\n  2) 1개 방호구역에 1개 이상 유수검지장치 설치, 1층에 1개씩 설치\n  3) 설치높이 : 공통높이 (0.8 ~ 1.5)\n  4) 헤드에 공급되는 물은 유수검지장치를 통과해야함 / 단 송수구를 통과한 물은 제외가능\n  5) 조기반응형 스프링클러헤드 → 습식 유수검지장치, 부압식 스프링클러설비",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c054",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "개방형 스프링클러 방수구역 및 일제개방밸브",
+  "body": "  1) 1 : 1 : 1 (1개 방수구역 : 1개층 : 1개씩) 일제개방밸브 설치\n  2) 1방수구역의 헤드 개수 : 50개 이하 (단 나누어 최소 25개 이상)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c055",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "수원",
+  "body": "  1) 수원의 양\n\n$$Q = N \\times 80 \\times 20\\ \\text{min} \\quad \\text{(29층 이하)}$$\n\n$$Q = N \\times 80 \\times 40\\ \\text{min} \\quad \\text{(30층 이상)}$$\n\n$$Q = N \\times 80 \\times 60\\ \\text{min} \\quad \\text{(50층 이상)}$$\n\n  \\* 창고시설 : $Q = N \\times 160 \\times 20\\ \\text{min}$ (→ 랙식의 경우 60min)\n\n  2) 방수압력 : 0.1 [MPa] 이상 **1.2 [MPa] 이하**\n  3) 방수량 : **80 [LPM] 이상**\n  4) 기준개수 ★\n\n| 구분 | 설치장소 | 세부 | 기준개수 |\n|---|---|---|---|\n| 지하층을 제외한 층수가 **10층 이하**인 소방대상물 | **공장** | **특수가연물**을 저장·취급 | 30개 |\n| 〃 | 〃 | 그 밖의 것 | 20개 |\n| 〃 | 근린생활시설, **판매시설**, **운수시설** 또는 **복합건축물** | **판**매시설 또는 복합건축물 (판매시설이 설치된 복합건축물) | 30개 |\n| 〃 | 〃 | 그 밖의 것 | 20개 |\n| 〃 | 그 밖의 것 | 헤드 부착높이 **8m 이상** | 20개 |\n| 〃 | 〃 | 헤드 부착높이 **8m 미만** | 10개 |\n| 아파트 | — | — | 10개 |\n| 지하층을 제외한 **11층 이상**인 소방대상물 (아파트 제외), **지하가 또는 지하역사, 창고시설**, 아파트 동연결 대형주차장 | — | — | 30개 |",
+  "star": true,
+  "review": false,
+  "formulas": [
+   "Q = N \\times 80 \\times 20\\ \\text{min} \\quad \\text{(29층 이하)}",
+   "Q = N \\times 80 \\times 40\\ \\text{min} \\quad \\text{(30층 이상)}",
+   "Q = N \\times 80 \\times 60\\ \\text{min} \\quad \\text{(50층 이상)}"
+  ],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "설치장소",
+     "세부",
+     "기준개수"
+    ],
+    "rows": [
+     [
+      "지하층을 제외한 층수가 10층 이하인 소방대상물",
+      "공장",
+      "특수가연물을 저장·취급",
+      "30개"
+     ],
+     [
+      "〃",
+      "〃",
+      "그 밖의 것",
+      "20개"
+     ],
+     [
+      "〃",
+      "근린생활시설, 판매시설, 운수시설 또는 복합건축물",
+      "판매시설 또는 복합건축물 (판매시설이 설치된 복합건축물)",
+      "30개"
+     ],
+     [
+      "〃",
+      "〃",
+      "그 밖의 것",
+      "20개"
+     ],
+     [
+      "〃",
+      "그 밖의 것",
+      "헤드 부착높이 8m 이상",
+      "20개"
+     ],
+     [
+      "〃",
+      "〃",
+      "헤드 부착높이 8m 미만",
+      "10개"
+     ],
+     [
+      "아파트",
+      "—",
+      "—",
+      "10개"
+     ],
+     [
+      "지하층을 제외한 11층 이상인 소방대상물 (아파트 제외), 지하가 또는 지하역사, 창고시설, 아파트 동연결 대형주차장",
+      "—",
+      "—",
+      "30개"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c056",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "개방형 헤드 수원량 공식 (일제살수식)",
+  "body": "  1) 헤드 개수 30개 이하\n\n$$Q = N \\times 1.6\\ [\\text{m}^3]$$\n\n  (80LPM × 20min)\n\n  2) 헤드 개수 30개 초과\n\n$$Q = K\\sqrt{10P}$$\n\n  (K: 방출계수, 표준형 80)\n\n  > ⚠️ 검수: 기준은 \"30개 **초과**\" 시 수리계산(헤드당 $Q = K\\sqrt{10P}$ [LPM]에 헤드 수와 20분을 곱해 수원량 산정)입니다 (원문: 30개 이상)",
+  "star": false,
+  "review": true,
+  "formulas": [
+   "Q = N \\times 1.6\\ [\\text{m}^3]",
+   "Q = K\\sqrt{10P}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c057",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "옥상수조",
+  "body": ": 유효수량의 1/3 이상을 옥상에 설치",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c058",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "",
+  "title": "옥상수조 설치제외 (옥내소화전과 동일)",
+  "body": "  1) 지하층만 있는 경우, 2) 고가수조 또는 가압수조로 사용, 3) 수원이 건축물 최상층 방수구보다 높은 경우, 4) 건축물의 높이 10m 이하",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c059",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "스프링클러설비의 구성",
+  "title": "① 헤드",
+  "body": "  - 감열체: 퓨지블링크형, 유리벌브형\n  - 드라이펜던트헤드: 동파방지용 헤드\n  - 조기반응형 헤드를 설치해야 하는 장소 (RTI값 50 이하)\n    1) 공동주택·노유자시설의 거실\n    2) 오피스텔, 숙박시설의 침실\n    3) 병원, 의원의 입원실\n  - 개방형 헤드를 설치하여야 하는 장소\n    1) 무대부\n    2) 연소할 우려가 있는 개구부\n  - 폐쇄형 스프링클러헤드의 표시온도 (감열체의 작동온도)\n\n| 설치장소의 최고 주위온도 | 표시온도 |\n|---|---|\n| 39℃ 미만 | 79℃ 미만 |\n| 39℃ 이상 **64℃ 미만** | 79℃ 이상 **121℃ 미만** |\n| 64℃ 이상 **106℃ 미만** | 121℃ 이상 **162℃ 미만** |\n| 106℃ 이상 | 162℃ 이상 |\n\n  - 폐쇄형 스프링클러헤드의 작동시험: 퓨지블링크형 → 표시온도의 97%~103% (±3%)\n  - 헤드의 설치장소별 수평거리\n\n| 설치 장소 | 수평거리(R) |\n|---|---|\n| · 특수가연물을 저장·취급하는 장소<br>· 무대부 | 1.7m 이하 |\n| · 기타구조<br>· 라지드롭형 헤드로 설치하는 창고 | 2.1m 이하 |\n| · 내화구조 | 2.3m 이하 |\n| · 아파트 등의 세대 내 | 2.6m 이하 |\n\n  - 정방형 헤드 배치 시 상호간의 거리: $S = 2R\\cos 45^\\circ$\n  - 직방형 배치\n    가로: $2R\\cos\\theta$\n    세로: $2R\\sin\\theta$\n  - 스프링클러헤드의 설치기준\n    ① 스프링클러헤드로부터 반경 60cm 이상, 벽과 10cm 이상 공간보유\n    ② 스프링클러헤드와 그 부착면(천장, 반자)과의 거리는 30cm 이하\n    ③ 연소할 우려가 있는 개구부는 상하좌우 2.5m 간격, 내측면과 15cm 이하\n    ④ 습식, 부압식 스프링클러설비 이외에는 상향식 헤드 설치 (동파방지)\n    → 예외) 드라이펜던트헤드 사용, 동파우려가 없는 곳, 개방형 헤드 사용 시",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "설치장소의 최고 주위온도",
+     "표시온도"
+    ],
+    "rows": [
+     [
+      "39℃ 미만",
+      "79℃ 미만"
+     ],
+     [
+      "39℃ 이상 64℃ 미만",
+      "79℃ 이상 121℃ 미만"
+     ],
+     [
+      "64℃ 이상 106℃ 미만",
+      "121℃ 이상 162℃ 미만"
+     ],
+     [
+      "106℃ 이상",
+      "162℃ 이상"
+     ]
+    ]
+   },
+   {
+    "header": [
+     "설치 장소",
+     "수평거리(R)"
+    ],
+    "rows": [
+     [
+      "· 특수가연물을 저장·취급하는 장소<br>· 무대부",
+      "1.7m 이하"
+     ],
+     [
+      "· 기타구조<br>· 라지드롭형 헤드로 설치하는 창고",
+      "2.1m 이하"
+     ],
+     [
+      "· 내화구조",
+      "2.3m 이하"
+     ],
+     [
+      "· 아파트 등의 세대 내",
+      "2.6m 이하"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c060",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "스프링클러설비의 구성",
+  "title": "② 배관",
+  "body": "  - 소방용 합성수지배관으로 설치 가능한 경우\n    1) 지하에 매설, 2) 내화구조로 구획된 덕트, 피트 내부, 3) 천장·반자가 불연재료, 준불연재료로 설치 + 소화수가 항상 채워진 경우\n  - 급수배관 (유속기준 가지배관: **6m/s**, 그 밖의 배관(주, 교차배관): **10m/s**)\n\n| | 25 | 32 | 40 | 50 | 65 | 80 | 90 | 100 | 125 | 150 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 가(폐쇄형) | 2 | 3 | 5 | 10 | 30 | 60 | 80 | 100 | 160 | 161↑ |\n| 다(개방형) | 1 | 2 | 5 | 8 | 15 | 27 | 40 | 55 | 90 | 91↑ |\n\n  _(다(개방형): 개방형 헤드 수 30개 이하)_\n\n   - 성능시험배관은 토출측 개폐밸브 이전에 분기하여 설치 (유량측정장치의 전·후단 직관부)\n    → 개폐밸브 — 유량측정장치 — 유량조절밸브\n   - 순환배관의 구경은 20mm 이상 / 체절압력(140%) 미만에서 개방되는 릴리프밸브 설치\n   - 가지배관의 배열기준  \n    1) 토너먼트 방식 ×,  \n    2) 한쪽에 8개 이하 헤드 배치, 신축배관 사용 시 수평거리 기준 충족  \n   - 교차배관의 구경: 최소 40mm 이상 (청소구는 교차배관 끝 40mm 이상)\n   - 하향식 헤드를 설치하는 경우 → 회향식 사용 (오염에 의한 막힘방지)\n   - 행거 설치 기준\n    가지배관: 3.5m 이내 1개씩 (헤드와 8cm 이격)\n    그 외 배관: 4.5m 이내 1개씩 (교차, 수평주행)\n   - 수직배수배관 구경: 50mm 이상\n   - 배수를 위한 배관의 기울기 (습식, 부압식은 제외), 상향식으로 설치\n    수평주행배관: $\\frac{1}{500}$ 이상\n    가지배관: $\\frac{1}{250}$ 이상",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "",
+     "25",
+     "32",
+     "40",
+     "50",
+     "65",
+     "80",
+     "90",
+     "100",
+     "125",
+     "150"
+    ],
+    "rows": [
+     [
+      "가(폐쇄형)",
+      "2",
+      "3",
+      "5",
+      "10",
+      "30",
+      "60",
+      "80",
+      "100",
+      "160",
+      "161↑"
+     ],
+     [
+      "다(개방형)",
+      "1",
+      "2",
+      "5",
+      "8",
+      "15",
+      "27",
+      "40",
+      "55",
+      "90",
+      "91↑"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c061",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 4. 스프링클러 설비",
+  "group": "스프링클러설비의 구성",
+  "title": "③ 시험장치",
+  "body": "  - 설치장소\n    습식, 부압식: 유수검지장치 2차측 배관 아무데나\n    건식: 유수검지장치에서 가장 먼 가지배관 끝에 연결 (1분 이내 방사 check)\n  - 배관구경: 25mm 이상 + 개폐밸브 or 개방형헤드 or 오리피스\n  - 시험배관 끝에는 물받이 통 및 배수관 설치 (단, 목욕탕, 화장실⟨?⟩ 등에 있는 경우 제외 … 끝부분 잘림)",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c062",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 5. 간이스프링클러설비 및 화재조기진압용 스프링클러설비",
+  "group": "",
+  "title": "① 간이스프링클러 수원의 양 ($Q = N \\times 50 \\times 10$, $N = 2$)",
+  "body": "| | 일반시설 | 근·숙·복 |\n|---|---|---|\n| 간이헤드 | $2 \\times 50\\ [\\text{LPM}] \\times 10\\ [\\text{min}] = 1000\\ \\text{L}$ | $5 \\times 50 \\times 20 = 5000\\ \\text{L}$ |\n| 주차장 | $2 \\times 80 \\times 10 = 1600\\ \\text{L}$ | $5 \\times 80 \\times 20 = 8000\\ \\text{L}$ |\n\n  _(근·숙·복의 5, 20 및 주차장의 80에 빨간 네모 강조)_",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "",
+     "일반시설",
+     "근·숙·복"
+    ],
+    "rows": [
+     [
+      "간이헤드",
+      "$2 \\times 50\\ [\\text{LPM}] \\times 10\\ [\\text{min}] = 1000\\ \\text{L}$",
+      "$5 \\times 50 \\times 20 = 5000\\ \\text{L}$"
+     ],
+     [
+      "주차장",
+      "$2 \\times 80 \\times 10 = 1600\\ \\text{L}$",
+      "$5 \\times 80 \\times 20 = 8000\\ \\text{L}$"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c063",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 5. 간이스프링클러설비 및 화재조기진압용 스프링클러설비",
+  "group": "",
+  "title": "② 방호구역",
+  "body": ": 바닥면적 1000㎡ 초과하지 아니할 것",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c064",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 5. 간이스프링클러설비 및 화재조기진압용 스프링클러설비",
+  "group": "",
+  "title": "③ 밸브, 배관설치 순서",
+  "body": ": 수도용 계량기, 급수차단장치, 개폐표시형밸브, 체크밸브, 압력계, 2개의 시험밸브 (암기: 수급개체압유2시)\n\n  > ⚠️ 검수: 상수도직결형 기준 순서는 수도용 계량기 → 급수차단장치 → 개폐표시형밸브 → 체크밸브 → 압력계 → **유수검지장치** → 2개의 시험밸브입니다 (원문 나열에 유수검지장치 누락, 암기어 \"유\"에만 반영)",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c065",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 5. 간이스프링클러설비 및 화재조기진압용 스프링클러설비",
+  "group": "",
+  "title": "④ 수평거리",
+  "body": "$S = 2.3\\text{m}$ 이하 (간이)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c066",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 5. 간이스프링클러설비 및 화재조기진압용 스프링클러설비",
+  "group": "",
+  "title": "⑤ 화재조기진압용 스프링클러",
+  "body": "  - 최대높이: 13.7m 이하\n  - 천장 기울기: $\\frac{168}{1000}$ 이하\n  - 돌출부 102mm 이하\n  - 선반은 물이 통과되도록 하부 침투가능구조\n  - 수원: $Q = 3 \\times 4 \\times K\\sqrt{10P} \\times 60\\ [\\text{min}]$\n\n---",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c067",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 6. 물분무 / 미분무 소화설비",
+  "group": "",
+  "title": "① 물분무 소화설비",
+  "body": "  - 수원 ($Q = Q_A \\times A \\times 20\\,\\text{min}$)\n    1) 케트 (케이블 트레이 / 케이블 덕트): 12 [L/min·m²]\n    2) 차주 (차고·주차장): 20 [L/min·m²]\n    3) ⟨?⟩ (컨베이어 벨트 등): 10 [L/min·m²]\n    4) 절연유봉입 변압기: 바닥부분 제외 변압기 표면적\n    5) 특가·차주: 바닥면적 최소 50m²\n\n| 소방 대상물 | 수원량 산정 방법 | 비고 |\n|---|---|---|\n| 특수가연물을 저장·취급하는 특정소방 대상물 | A × 10 [L/min·m²] × 20 min 이상 (A: 바닥면적) | 최대 방수구역의 바닥 면적을 기준 / 50m²(최소) |\n| 절연유 봉입 변압기 | A × 10 [L/min·m²] × 20 min (A: 바닥부분을 제외한 표면적의 합) | – |\n| 컨베이어 벨트 등 | A × 10 [L/min·m²] × 20 min | – |\n| 케이블 트레이, 케이블 덕트 등 | A × 12 [L/min·m²] × 20 min | – |\n| 차고·주차장 | A × 20 [L/min·m²] × 20 min | 최대 방수구역의 바닥 면적을 기준 / 50m²(최소) |\n\n  - 물분무헤드 (충분 디선 슬): 충돌형, 분사형, 디플렉터형, 선회류형, 슬리트형\n    \\* 디플렉터형: 물방울을 반사판에 충돌시켜 미세 물방울을 만드는 방식\n  - 물분무헤드의 설치제외: 운전시 표면온도가 260°C 이상으로 되는 등 직접분무를 하는 경우 그 부분에 손상을 입힐 우려가 있는 기계장치 등이 있는 장소\n  - 고압의 전기기기와 물분무 헤드 사이의 거리\n\n| 전압 [kV] | 거리 [cm] |\n|---|---|\n| 66 이하 | 70 이상 |\n| 66 초과 77 이하 | 80 이상 |\n| 77 초과 110 이하 | 110 이상 |\n| 110 초과 154 이하 | 150 이상 |\n| 154 초과 181 이하 | 180 이상 |\n| 181 초과 220 이하 | 210 이상 |\n| 220 초과 275 이하 | 260 이상 |\n\n  ![p05_voltage_distance](images-gpt/p05_voltage_distance.png)\n\n  _(그림: 전압 상한값에서 거리로 \"1의자리 반올림 →\", \"반올림 →\" 화살표 표기(66→70, 77→80, 110→110, 154→150, 181→180), 220·275에 파란 원 표시)_\n\n  - 물분무소화설비를 설치하는 차고 또는 주차장의 배수설비 설치기준\n    1) 높이 10cm 이상의 경계턱으로 배수구 설치\n    2) 40m 이하 마다 집수관·소화피트 등 기름분리장치 설치\n    3) 바닥 기울기 $\\frac{2}{100}$ 이상",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "소방 대상물",
+     "수원량 산정 방법",
+     "비고"
+    ],
+    "rows": [
+     [
+      "특수가연물을 저장·취급하는 특정소방 대상물",
+      "A × 10 [L/min·m²] × 20 min 이상 (A: 바닥면적)",
+      "최대 방수구역의 바닥 면적을 기준 / 50m²(최소)"
+     ],
+     [
+      "절연유 봉입 변압기",
+      "A × 10 [L/min·m²] × 20 min (A: 바닥부분을 제외한 표면적의 합)",
+      "–"
+     ],
+     [
+      "컨베이어 벨트 등",
+      "A × 10 [L/min·m²] × 20 min",
+      "–"
+     ],
+     [
+      "케이블 트레이, 케이블 덕트 등",
+      "A × 12 [L/min·m²] × 20 min",
+      "–"
+     ],
+     [
+      "차고·주차장",
+      "A × 20 [L/min·m²] × 20 min",
+      "최대 방수구역의 바닥 면적을 기준 / 50m²(최소)"
+     ]
+    ]
+   },
+   {
+    "header": [
+     "전압 [kV]",
+     "거리 [cm]"
+    ],
+    "rows": [
+     [
+      "66 이하",
+      "70 이상"
+     ],
+     [
+      "66 초과 77 이하",
+      "80 이상"
+     ],
+     [
+      "77 초과 110 이하",
+      "110 이상"
+     ],
+     [
+      "110 초과 154 이하",
+      "150 이상"
+     ],
+     [
+      "154 초과 181 이하",
+      "180 이상"
+     ],
+     [
+      "181 초과 220 이하",
+      "210 이상"
+     ],
+     [
+      "220 초과 275 이하",
+      "260 이상"
+     ]
+    ]
+   }
+  ],
+  "images": [
+   "images-gpt/p05_voltage_distance.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c068",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 6. 물분무 / 미분무 소화설비",
+  "group": "",
+  "title": "f) 기울기 정리",
+  "body": "| 구분 | 기울기 |\n|---|---|\n| 연결살수설비의 수평주행배관 | 1/100 이상 |\n| 물분무소화설비의 차고·주차장의 바닥 | 2/100 이상 |\n| 습식·부압식 스프링클러 이외의 가지배관 | 1/250 이상 |\n| 습식·부압식 스프링클러 이외의 수평주행배관 | 1/500 이상 |",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "기울기"
+    ],
+    "rows": [
+     [
+      "연결살수설비의 수평주행배관",
+      "1/100 이상"
+     ],
+     [
+      "물분무소화설비의 차고·주차장의 바닥",
+      "2/100 이상"
+     ],
+     [
+      "습식·부압식 스프링클러 이외의 가지배관",
+      "1/250 이상"
+     ],
+     [
+      "습식·부압식 스프링클러 이외의 수평주행배관",
+      "1/500 이상"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c069",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 6. 물분무 / 미분무 소화설비",
+  "group": "",
+  "title": "② 미분무 소화설비",
+  "body": "  - 용어: 미분무 → 물입자의 누적체적분포가 400 μm 이하이고 A·B·C급 화재에 적응성을 갖는 것\n    저압 미분무 ← 1.2 MPa, 중압 미분무 ← 3.5 MPa, 고압 미분무\n\n  ![p05_mist_pressure](images-gpt/p05_mist_pressure.png)\n\n  _(그림: 1.2 MPa 이하 → 저압 미분무, 1.2 ~ 3.5 MPa → 중압 미분무, 3.5 MPa 초과 → 고압 미분무를 화살표로 표기)_\n\n  - 수원 (\\*필터 또는 스트레이너의 메쉬는 헤드 오리피스 지름의 80% 이하)\n\n$$Q = N \\times D \\times T \\times S + V$$\n\n  Q: 수원의 양 [m³], N: 헤드의 개수, D: 설계유량 [m³/min], T: 방수시간 [min], S: 안전율 (1.2 이상, ※없으면 1.2), V: 배관의 총체적 [m³]\n  - 헤드 (최고주위온도 < 표시온도): 4.3, 27\n\n$$T_a = 0.9\\,T_m - 27.3\\,^{\\circ}\\mathrm{C}$$\n\n  T (°C)",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q = N \\times D \\times T \\times S + V",
+   "T_a = 0.9\\,T_m - 27.3\\,^{\\circ}\\mathrm{C}"
+  ],
+  "tables": [],
+  "images": [
+   "images-gpt/p05_mist_pressure.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c070",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "팽창비",
+  "body": "= $\\dfrac{\\text{최종 발생한 포 체적}}{\\text{원래 포수용액 체적}}$\n\n| 구분 | 팽창비 | 포방출구의 종류 | 포소화 약제 |\n|---|---|---|---|\n| 저발포 | 20 이하 | 포헤드, 압축공기포헤드 | 단백포, 수성막포, 불화단백포, 내알코올포, 합성계면 활성제포 |\n| 고발포 | 80 이상 1000 미만 | 고발포용 고정포 방출구 | 합성계면 활성제포 |",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "팽창비",
+     "포방출구의 종류",
+     "포소화 약제"
+    ],
+    "rows": [
+     [
+      "저발포",
+      "20 이하",
+      "포헤드, 압축공기포헤드",
+      "단백포, 수성막포, 불화단백포, 내알코올포, 합성계면 활성제포"
+     ],
+     [
+      "고발포",
+      "80 이상 1000 미만",
+      "고발포용 고정포 방출구",
+      "합성계면 활성제포"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c071",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "포방출구의 종류 (요약)",
+  "body": "  1) 포헤드 ($R = 2.1\\,\\text{m}$) ← 포헤드 (9m² 마다, $Q = Q_A \\times A \\times T$ (10분)), 포워터스프링클러헤드 (8m² 마다, $Q = N \\times 75 \\times 10$)\n  2) 포소화전 및 호스릴 포소화설비: $Q = N \\times 300 \\times 20 \\times (0.75)$ — (0.75)는 바닥면적 200m² 미만일 때\n  3) 압축공기포소화설비: $Q = Q_A \\times A \\times T$ (10분), $Q_A$ < 특가: 2.3 / 일가: 1.63\n  4) 고정포 방출설비 + 보조포 소화전\n  저발포용 (옥외탱크): $Q = Q_1 + Q_2 + Q_3$\n  고발포용 (2의⟨?⟩): $Q = Q_V \\times V \\times T$ (10분), V는 관포체적",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c072",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "포소화설비의 적응성",
+  "body": "  1) 특수가연물 취급 공장·창고: 포워터, 포헤드, 고정포(고발포), 압축공기포 (포포고압)\n  2) 차고·주차장: 포, 포, 고, 압 → 호스릴포소화설비, 포소화전설비 대체가능\n  3) 항공기 격납고: 포, 포, 고, 압 + 〃(호스릴포소화설비) 〃 추가설치가능\n  4) 전기 관련설비: 바닥면적 300m² 미만에는 고정식 압축공기포소화설비",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c073",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "① 고정포 방출설비 (저발포용 → 위험물 탱크)",
+  "body": "  - 포소화약제 저장량 (전체)\n\n$$Q = Q_1 + Q_2 + Q_3$$\n\n  Q₁: 고정포 방출구 양\n  Q₂: 보조포 소화전의 양\n  Q₃: 송액관의 양\n\n  - Q₁ (고정포 방출구에서 방출하기 위한 수용액량)\n\n$$Q_1 = \\underbrace{Q_A \\cdot A \\cdot T}_{\\text{수용액}} \\cdot \\underbrace{(S)}_{\\text{원액}} \\quad [\\mathrm{L}]$$\n\n  ![p05_crt_frt_tank](images-gpt/p05_crt_frt_tank.png)\n\n  _(그림: CRT 형 탱크 $A = \\frac{\\pi}{4} D^2$, FRT 형 탱크 $A = \\frac{\\pi}{4} (D^2 - d^2)$, 원 안에 D, d 표기)_\n\n  - Q₂ (보조포 소화전의 수용액량)\n\n$$Q_2 = N \\times 400 \\times 20 \\cdot (S) \\quad [\\mathrm{L}]$$\n\n  N: 최대 3개 < 단구형 / 쌍구형 주의\n\n  - Q₃ (송액관의 부피)\n\n$$Q_3 = V \\times 1000 \\cdot (S) \\quad [\\mathrm{L}]$$\n\n  V: 부피 (A×L). 단, 내경 75mm 이하인 경우 송액관량 제외\n    1000 : m³ → L로 변환.",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q = Q_1 + Q_2 + Q_3",
+   "Q_1 = \\underbrace{Q_A \\cdot A \\cdot T}_{\\text{수용액}} \\cdot \\underbrace{(S)}_{\\text{원액}} \\quad [\\mathrm{L}]",
+   "Q_2 = N \\times 400 \\times 20 \\cdot (S) \\quad [\\mathrm{L}]",
+   "Q_3 = V \\times 1000 \\cdot (S) \\quad [\\mathrm{L}]"
+  ],
+  "tables": [],
+  "images": [
+   "images-gpt/p05_crt_frt_tank.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c074",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "고정포 방출구의 $Q_A$ 구하는 표 (참고용)",
+  "body": "| 위험물 \\ 종류 | I형 수용액량 [L/m²] | I형 방출률 | II형 수용액량 [L/m²] | II형 방출률 | 특형 수용액량 [L/m²] | 특형 방출률 | III형 수용액량 [L/m²] | III형 방출률 | IV형 수용액량 [L/m²] | IV형 방출률 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| 제1석유류 (휘발유) | 120 | 4 | 220 | 4 | 240 | 8 | 220 | 4 | 220 | 4 |\n| 제2석유류 (경유, 등유) | 80 | 4 | 120 | 4 | 160 | 8 | 120 | 4 | 120 | 4 |\n| 제3석유류 (중유) | 60 | 4 | 100 | 4 | 120 | 8 | 100 | 4 | 100 | 4 |",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "위험물 \\ 종류",
+     "I형 수용액량 [L/m²]",
+     "I형 방출률",
+     "II형 수용액량 [L/m²]",
+     "II형 방출률",
+     "특형 수용액량 [L/m²]",
+     "특형 방출률",
+     "III형 수용액량 [L/m²]",
+     "III형 방출률",
+     "IV형 수용액량 [L/m²]",
+     "IV형 방출률"
+    ],
+    "rows": [
+     [
+      "제1석유류 (휘발유)",
+      "120",
+      "4",
+      "220",
+      "4",
+      "240",
+      "8",
+      "220",
+      "4",
+      "220",
+      "4"
+     ],
+     [
+      "제2석유류 (경유, 등유)",
+      "80",
+      "4",
+      "120",
+      "4",
+      "160",
+      "8",
+      "120",
+      "4",
+      "120",
+      "4"
+     ],
+     [
+      "제3석유류 (중유)",
+      "60",
+      "4",
+      "100",
+      "4",
+      "120",
+      "8",
+      "100",
+      "4",
+      "100",
+      "4"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c075",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "고정포 방출구의 종류",
+  "body": "| 구분 | 주입방식 | 탱크 |\n|---|---|---|\n| I, II | 상부포 | CRT (I ~ IV형 공통) |\n| III, IV | 하부포 | CRT (I ~ IV형 공통) |\n| 특형 | 상부포 | → FRT |\n\n  ![p06_foam_outlet_type2](images-gpt/p06_foam_outlet_type2.png)\n\n  _(그림: Ⅱ형 포 방출구 단면도. 라벨: 봉판, 폼챔버, 발포기, 디플렉터, 액면, 스트레이너, 완충장치 ⟨?⟩, \"Ⅱ형 방출구\")_",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "주입방식",
+     "탱크"
+    ],
+    "rows": [
+     [
+      "I, II",
+      "상부포",
+      "CRT (I ~ IV형 공통)"
+     ],
+     [
+      "III, IV",
+      "하부포",
+      "CRT (I ~ IV형 공통)"
+     ],
+     [
+      "특형",
+      "상부포",
+      "→ FRT"
+     ]
+    ]
+   }
+  ],
+  "images": [
+   "images-gpt/p06_foam_outlet_type2.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c076",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "② 옥내포소화전 방식, 호스릴 방식의 포소화약제량 (수용액의 량) — (0.75)에 \"약제 저장량\" 메모",
+  "body": "$$Q = N \\times 300\\,[\\text{L/min}] \\times 20\\,[\\text{min}] \\times (0.75) \\cdot (S)$$\n\n  (바닥면적 200m² 미만은 75%를 적용) N: 최대 5개\n  \\* 단, 주차장·차고의 200m² 이하의 경우 75% 적용이 아닌 300 → 230 적용 (토출량)\n  \\* 3m 이내 호스, 호스릴함 설치",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q = N \\times 300\\,[\\text{L/min}] \\times 20\\,[\\text{min}] \\times (0.75) \\cdot (S)"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c077",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "③ 포헤드 방식의 포소화약제량 (수용액의 량)",
+  "body": "  1) 포워터 스프링클러 헤드 (바닥면적 8m²당 1개 이상씩)\n\n$$Q = N \\times 75\\,[\\text{lpm}] \\times 10\\,[\\text{min}] \\cdot (S)$$\n\n  2) 포헤드 (바닥면적 9m²당 1개 이상씩)\n\n$$Q = Q_A\\,[\\text{L/m}^2\\cdot\\text{min}] \\times A\\,[\\text{m}^2] \\times 10\\,[\\text{min}] \\cdot (S)$$\n\n  \\* $Q_A$ 관련 값\n\n  차고·주차장, 항공기 격납고 (이동식은 별도 ⟨?⟩) →\n  수성막포 소화약제: $Q_A$ = 3.7 [L/m²·min]\n  단백포 소화약제: $Q_A$ = 6.5 [L/m²·min]\n  합성계면활성제포 소화약제: $Q_A$ = 8.0 [L/m²·min]\n  특수가연물 취급 → 모든 약제 소요 ⟨?⟩: $Q_A$ = 6.5 [L/m²·min]\n\n  \\* 포헤드 상호간거리\n\n$$S = 2R\\cos 45^\\circ \\quad (R = 2.1\\,\\text{m})$$",
+  "star": false,
+  "review": true,
+  "formulas": [
+   "Q = N \\times 75\\,[\\text{lpm}] \\times 10\\,[\\text{min}] \\cdot (S)",
+   "Q = Q_A\\,[\\text{L/m}^2\\cdot\\text{min}] \\times A\\,[\\text{m}^2] \\times 10\\,[\\text{min}] \\cdot (S)",
+   "S = 2R\\cos 45^\\circ \\quad (R = 2.1\\,\\text{m})"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c078",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "④ 압축공기포 소화설비의 포소화약제량 (수용액의 량)",
+  "body": "$$Q = Q_A\\,[\\text{L/m}^2\\cdot\\text{min}] \\times A\\,[\\text{m}^2] \\times 10\\,[\\text{min}] \\cdot (S)$$\n\n  \\* $Q_A$ 관련 값\n\n  특수가연물, 알코올, 케톤류: 2.3 [L/m²·min]\n  일반가연물, 탄화수소류: 1.63 [L/m²·min]\n\n  \\* 바닥면적당 헤드 개수\n\n  유류탱크: 바닥면적 13.9 [m²] 당 1개 이상\n  특수가연물: 〃 9.3 [m²] 당 1개 이상 → ⟨판독불가⟩",
+  "star": false,
+  "review": true,
+  "formulas": [
+   "Q = Q_A\\,[\\text{L/m}^2\\cdot\\text{min}] \\times A\\,[\\text{m}^2] \\times 10\\,[\\text{min}] \\cdot (S)"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c079",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "⑤ 고발포용 고정포 방출설비의 포소화약제의 량 (수용액의 량)",
+  "body": "$$Q = Q_v\\,[\\text{L/m}^3\\cdot\\text{min}] \\times V_{관}\\,[\\text{m}^3] \\times 10\\,[\\text{min}] \\cdot (S)$$\n\n  \\* 바닥면적 500[m²] 당 1개 이상 설치\n\n  \\* $V_{관}$ : 관포체적\n\n  방호대상물 높이 + 0.5m로 채우는 체적\n\n  ![p06_foam_volume](images-gpt/p06_foam_volume.png)\n\n  _(그림: 관포체적 개념도. 상단 \"공간\", 대상물 위 0.5m 표시, 하단 빗금 \"대상물\")_",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q = Q_v\\,[\\text{L/m}^3\\cdot\\text{min}] \\times V_{관}\\,[\\text{m}^3] \\times 10\\,[\\text{min}] \\cdot (S)"
+  ],
+  "tables": [],
+  "images": [
+   "images-gpt/p06_foam_volume.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c080",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 7. 포소화설비",
+  "group": "",
+  "title": "포소화약제 혼합방식",
+  "body": "  1) 라인 프로포셔너 방식: 펌프와 발포기의 중간에 설치된 벤추리관의 벤추리 작용을 통해 흡입·혼합.\n  2) 펌프 프로포셔너 방식: 농도조정밸브에서 포소화약제의 필요량 혼합.\n  3) 프레셔 프로포셔너 방식: 벤추리관의 벤추리 작용과 약제 저장탱크에 대한 압력에 따라 흡입·혼합.\n  4) 프레셔 사이드 프로포셔너 방식: 펌프의 토출관에 압입기 설치 + 약제 압입용 펌프(추가펌프)로 압입시켜 혼합. 가장 정밀, 가장 비쌈.\n\n---",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c081",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "CO₂의 물성 및 특징",
+  "body": "  분자량: 44, 비중: 1.53, 임계온도: 31.53°C\n\n  소화효과: 질식, 냉각 (증발잠열, 줄-톰슨 효과), 피복효과 (비중 1.53)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c082",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "이산화탄소 소화설비의 분류",
+  "body": "  1) 방출방식: 전역방출방식, 국소방출방식\n  2) 기동방식: 전기식, 기계식, 가스압력식\n  3) 저장방식\n    저압식: 용기내부 -18°C 이하, 2.1 MPa 압력유지\n    고압식: 봄베(68L, 45kg) 사용, 헤드방사압 2.1 MPa 이상",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c083",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "소화약제 저장용기의 설치장소",
+  "body": "  1) 방호구역 외 설치\n  2) 온도가 40°C 이하인 곳\n  3) 용기간의 간격은 3cm 이상 (점검 용이)\n  4) 저장용기와 집합관 사이 체크밸브 설치 (역류 방지)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c084",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "충전비",
+  "body": ": $C = \\dfrac{V\\,[\\text{L}]}{G\\,[\\text{kg}]}$ (C: 충전비, V: 저장용기의 부피, G: 소화약제의 중량)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c085",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "저장용기의 설치기준",
+  "body": "  1) 고압식의 충전비: 1.5 이상 1.9 이하 / 저압식의 충전비: 1.1 이상 1.4 이하\n  2) 저압식의\n    안전밸브: 내압시험압력의 0.64배 ~ 0.8배 작동 → 설치\n    봉판: 〃 0.8배 ~ 1배 작동 → 설치\n    액면계, 압력계, 압력경보장치 (1.9 ~ 2.3 MPa 작동) 설치\n    내부온도 -18°C 이하, 2.1 MPa 유지\n  3) 저장용기의 내압시험압력: 고압식 → 25 MPa 이상, 저압식 → 3.5 MPa 이상",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c086",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "선택밸브/개폐밸브 사이 안전장치",
+  "body": ": 최소설계압력과 최대허용압력 사이의 압력에서 작동하는 안전장치 설치 + 안전장치는 봉판식 ⟨?⟩ (PDF 재판독: 용전식) 사용금지!",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c087",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "① 전역 방출 방식의 소화약제량",
+  "body": "$$W = (V \\times \\alpha) + (A \\times \\beta)$$\n\n  W = 약제량 [kg], V = 방호구역의 체적 [m³], A = 개구부 면적, β = 개구부 가산량 (표면: 5 / 심부: 10, 자동폐쇄장치 설치 시 → 0)\n\n  1) 표면화재의 α, β (단, 설계농도(34% 이상)에 따라 보정계수 적용)\n\n![표면화재의 α, β — 최저한도 병합 및 파란 분기 화살표](images-gpt/p06_co2_surface_fire_table.svg)\n\n메모: α는 방호구역 체적 1m³당 필요한 소화약제량이며, 체적에 해당하는 α를 골라 V × α를 계산한다. 체적으로 계산한 약제량이 표의 최저한도보다 작으면 최저한도를 적용한다. β는 개구부 1m²당 추가하는 약제량으로, 모든 구간에서 5 kg/m²이다.\n\n\n  2) 심부화재의 α, β\n\n| 방호대상물 | α (체적 1m³ 당 약제량) | β (개구부 가산량) |\n|---|---|---|\n| 전기설비, 케이블실 | 1.3 [kg/m³] | 10 [kg/m²] |\n| 체적 55[m³] 미만의 전기설비 | 1.6 [kg/m³] | (병합) |\n| 서고, 전자제품, 목재가공품창고, 박물관 (서, 전, 박, 목) | 2.0 [kg/m³] | (병합) |\n| 고무류, 모피창고, 집진설비, 석탄창고, 면화류창고 (고, 모, 집, 석, 면) | 2.7 [kg/m³] | (병합) |\n\n  _(β 열: 4행 병합 셀, 10 kg/m²)_",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "W = (V \\times \\alpha) + (A \\times \\beta)"
+  ],
+  "tables": [
+   {
+    "header": [
+     "방호대상물",
+     "α (체적 1m³ 당 약제량)",
+     "β (개구부 가산량)"
+    ],
+    "rows": [
+     [
+      "전기설비, 케이블실",
+      "1.3 [kg/m³]",
+      "10 [kg/m²]"
+     ],
+     [
+      "체적 55[m³] 미만의 전기설비",
+      "1.6 [kg/m³]",
+      "(병합)"
+     ],
+     [
+      "서고, 전자제품, 목재가공품창고, 박물관 (서, 전, 박, 목)",
+      "2.0 [kg/m³]",
+      "(병합)"
+     ],
+     [
+      "고무류, 모피창고, 집진설비, 석탄창고, 면화류창고 (고, 모, 집, 석, 면)",
+      "2.7 [kg/m³]",
+      "(병합)"
+     ]
+    ]
+   }
+  ],
+  "images": [
+   "images-gpt/p06_co2_surface_fire_table.svg"
+  ],
+  "aiNotes": [
+   "최저한도 [kg] 머리글 아래 줄에 V·α가 있다. 최저한도 열의 첫 두 데이터 행(45 m³ 미만, 45 m³ 이상 150 m³ 미만)은 세로 병합되어 45 kg (1병)이 표시된다. 다음 행은 135 kg (3병), 마지막 행은 1125 kg (25병)이다. β 열은 네 데이터 행을 세로 병합하여 5 kg/m²를 한 번만 표시한다. 45의 4와 135의 3에 파란 동그라미가 있으며, 4 아래의 두 갈래 화살표는 135의 1과 3으로, 3 아래의 두 갈래 화살표는 1125의 두 번째 1과 2로 연결된다. 파란 표시는 최저한도 45 → 135 → 1125 kg을 기억하기 위한 암기 표시이다."
+  ]
+ },
+ {
+  "id": "c088",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "② 국소방출방식의 소화약제량",
+  "body": "  1)\n$$W = A[m^2] \\times 13[kg/m^2] \\times h$$\n  _(h: 할증계수 — 고압식 1.4, 저압식 1.1)_\n\n  2) 비산우려가 있는 경우\n$$W = V_{방} \\times \\left(8 - 6\\frac{a}{A}\\right) \\times h$$\n  _(h: 할증계수 — 고압식 1.4, 저압식 1.1)_\n\n  ※ 방호공간(V): 앞뒤·양옆·위의 0.6m씩 늘린 가상의 체적.\n  ![p07_virtual_box](images-gpt/p07_virtual_box.png)\n\n  _(그림: 방호대상물 주위로 0.6m씩 늘린 가상 직육면체, V_방 표시)_\n  ※ A (방호공간의 벽면적): 방호공간 둘레 벽면적의 합 [m²].",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "W = A[m^2] \\times 13[kg/m^2] \\times h",
+   "W = V_{방} \\times \\left(8 - 6\\frac{a}{A}\\right) \\times h"
+  ],
+  "tables": [],
+  "images": [
+   "images-gpt/p07_virtual_box.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c089",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "기동장치",
+  "body": "  1) 수동식 기동장치 → 방출지연스위치 설치 필수\n  2) 자동식 〃 → 기동용 가스용기(N₂)는 5L 이상, 6.0[MPa] 이상",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c090",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "배관 설치기준",
+  "body": "  1) 강관 (압력배관용 탄소강관)\n    고압식: 스케줄 80 이상 (Φ20 이하는 스케줄 40)\n    저압식: 스케줄 40 이상\n  2) 배관부속: 고압식의 1차측 → 9.5[MPa] / 고압식의 2차측, 저압식 → 4.5[MPa]",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c091",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "배관의 구경 (방출 소요시간)",
+  "body": "  1) 전역방출방식 [표면화재: 1분, 심부화재: 7분]\n  2) 국소방출방식: 30초",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c092",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "전역 분사헤드 방출압력",
+  "body": "  고압식: 2.1 [MPa] 이상\n  저압식: 1.05 [MPa] 이상\n\n  ※ 분사헤드의 오리피스 면적은 배관구경의 70% 이하 → 방사압 확보⟨?⟩를 위해\n  _(원문 글씨는 \"170%\"처럼 보이나, 옆 그림의 A₂ = 0.7A₁ 및 기준(70% 이하)으로 보아 70%)_\n  ![p07_orifice](images-gpt/p07_orifice.png)\n\n  _(그림: 배관 A₁과 분기 오리피스 A₂, A₂ = 0.7A₁)_",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [],
+  "images": [
+   "images-gpt/p07_orifice.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c093",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 8. 이산화탄소 소화설비",
+  "group": "",
+  "title": "분사헤드 설치제외 장소",
+  "body": "  1) 방재실·제어실 등 사람이 상시근무\n  2) 전시장 등 다수인이 출입·통행하는\n  3) 니트로셀룰로스·셀룰로이드 등 자기연소성 (5류)\n  4) 나트륨, 칼륨, 칼슘 등 활성금속물질 (3류)\n\n\\* **음향경보장치는 방출개시 후 1분 이상 경보를 계속할 수 있는 것으로 할 것.**  \n\\* **지하층, 무창층, 밀폐된 거실 등에는 배출설비를 갖추어야 함.**  \n\\* **방호구역에 약제가 방출되는 경우 후각으로 인지할 수 있도록 부취발생기 설치.**  ",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c094",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 9. 할론 소화설비",
+  "group": "",
+  "title": "할론 소화약제의 종류 (1301, 2402)",
+  "body": "  1) 할론 1301 (CF₃Br): 기체 → 오존층파괴, 열분해시 독성물질 발생\n  2) 할론 2402 (C₂F₄Br₂): 액체, 2 MPa 이하의 압력조정장치 설치 (무상분무)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c095",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 9. 할론 소화설비",
+  "group": "",
+  "title": "저장용기의 설치기준",
+  "body": "  1) 할론 1301: 2.5[MPa] 또는 4.2[MPa] 내압 / 충전비: 0.9 ~ 1.6",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c096",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 9. 할론 소화설비",
+  "group": "",
+  "title": "① 전역 방출 방식의 소화약제량 (할론 1301)",
+  "body": "$$W = (V \\times \\alpha) + (A \\times \\beta)$$\n\n  - α, β값 (표면·심부 구분 X)\n    1) 차고·주차장·전기설비 / 특수가연물(가연물질): α = 0.32 ~ 0.64, β = 2.4\n    2) 특수가연물(자연물질): α = 0.52 ~ 0.64, β = 3.9\n\n  _(우측 여백 메모: α 최소값에서 β로 화살표 \"×7.5\" — 0.32 × 7.5 = 2.4, 0.52 × 7.5 = 3.9)_",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "W = (V \\times \\alpha) + (A \\times \\beta)"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c097",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 9. 할론 소화설비",
+  "group": "",
+  "title": "② 국소 방출 방식의 소화약제량 (할론 1301)",
+  "body": "  1)\n$$W = A \\times 6.8 \\times \\frac{1.25}{h}$$\n\n  2) 비산우려가 있는 경우\n$$W = V_{방} \\times \\left(4 - 3\\frac{a}{A}\\right)[kg/m^3] \\times \\frac{1.25}{h}$$\n  _(4, 3 원 표시, 옆 메모: \"CO₂ 절반\" — CO₂의 8, 6의 절반)_",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "W = A \\times 6.8 \\times \\frac{1.25}{h}",
+   "W = V_{방} \\times \\left(4 - 3\\frac{a}{A}\\right)[kg/m^3] \\times \\frac{1.25}{h}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c098",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 9. 할론 소화설비",
+  "group": "",
+  "title": "기동장치 (CO₂와 차이점)",
+  "body": "(나머지는 CO₂와 동일)\n  → 가스압력식의 기동용기 (CO₂로 사용가능) (1L 이상, 0.6kg 이상, 충전비 1.5~1.9)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c099",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 9. 할론 소화설비",
+  "group": "",
+  "title": "분사헤드 (전역·국소 공통)",
+  "body": "  1) 할론 2402는 약제가 무상으로 분무 (액체이기 때문)\n  2) 방출압력: 할론 2402: 0.1 MPa / 할론 1211: 0.2 MPa / 할론 1301: 0.9 MPa\n  3) 방사시간 10초 이내 → 모든 할로겐족 10초 이내",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c100",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 10. 할로겐화합물 및 불활성기체 소화설비",
+  "group": "",
+  "title": "불활성기체(IG)의 설계농도",
+  "body": ": 43 %",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c101",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 10. 할로겐화합물 및 불활성기체 소화설비",
+  "group": "",
+  "title": "소화약제의 구비조건 (소독된 물안경)",
+  "body": "  ㉠ **소**화성능이 할론과 유사  \n  ㉡ **독**성이 낮고, ㉢ **환**경영향성이 낮아야 함  \n  ㉣ **물**성은 ① 잔류물이 없고, ② 비전도성, ③ 냉각효과가 커야 함  \n  ㉤ **안**정성이 높고 (금속부식성 X)  \n  ㉥ **경**제성이 할론과 크게 높지 않아야 함  \n\\* **저장용기 설치장소는 온도가 55°C 이하 (나머지는 40°C 이하)**  ",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c102",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 10. 할로겐화합물 및 불활성기체 소화설비",
+  "group": "",
+  "title": "저장용기 재충전 및 교체기준",
+  "body": "  1) 할로겐: 손실이 5% 초과, 압력손실이 10% 초과할 경우 교체\n  2) 불활성기체: 압력손실이 5% 초과할 경우 교체",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c103",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 10. 할로겐화합물 및 불활성기체 소화설비",
+  "group": "",
+  "title": "① 할로겐화합물의 소화약제량 (only 전역방출방식) → 10초 이내",
+  "body": "$$W = \\frac{V}{S} \\times \\left(\\frac{C}{100 - C}\\right)$$\n  _(V 위 메모: \"공식주의\")_\n\n  V: 체적 [m³]\n  S: t°C의 비체적 (K₁ + K₂t)\n  C: 설계농도 (**A급 1.2**, **B급 1.3**, **C급 1.35**)\n\n  ※ 구할 때 S, C 먼저 구하고 공식 적용",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "W = \\frac{V}{S} \\times \\left(\\frac{C}{100 - C}\\right)"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c104",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 10. 할로겐화합물 및 불활성기체 소화설비",
+  "group": "",
+  "title": "② 불활성기체의 소화약제량 → A, C급 2분 / B급 1분 이내",
+  "body": "$$X = 2.303 \\times \\frac{V_s}{S} \\times \\log_{10}\\left(\\frac{100}{100 - C}\\right) \\times V$$\n\n  X: 약제부피 [m³]  \n  V_s: 20°C의 비체적  \n  S: t°C의 비체적 (〃)  \n  C: 설계농도 (**1.2 / 1.3 / 1.35**)  \n  V: 체적 [m³]  \n\n  ★ ①·②에서 배관구경 산정조건에 따라 ~ 나오면, **C × 0.95** 로 약제량 다시 구하여 적용",
+  "star": true,
+  "review": false,
+  "formulas": [
+   "X = 2.303 \\times \\frac{V_s}{S} \\times \\log_{10}\\left(\\frac{100}{100 - C}\\right) \\times V"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c105",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 10. 할로겐화합물 및 불활성기체 소화설비",
+  "group": "",
+  "title": "③ 배관두께 공식",
+  "body": "$$t = \\frac{PD}{2SE} + A$$\n  _(D 위 메모: \"주의\")_\n\n  D: 배관 바깥지름\n  SE: 최대허용응력 [인장강도 × 1/4, 항복점 × 2/3 중 작은값] × 배관이음효율 (0.6 / 0.85 / 1) × 1.2 (여유값)\n\n  \\*배관이음효율\n  - 이음매 없는 배관: 1\n  - 전기저항 용접: 0.85\n  - 가열맞대기 용접: 0.6\n\n  \\*A (배관연결 허용값)\n  - 나사이음: 나사 높이\n  - 홈 이음: 홈의 깊이 → 거리 0이 다르므로⟨?⟩\n  - 용접 이음: 0\n\n---",
+  "star": false,
+  "review": true,
+  "formulas": [
+   "t = \\frac{PD}{2SE} + A"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c106",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "분말 소화약제의 종류",
+  "body": "  제1종: 탄산수소나트륨 ($\\text{NaHCO}_3$), 백색, B.C급화재  \n  제2종: 탄산수소칼륨 ($\\text{KHCO}_3$), 담회색, B.C급화재  \n  제3종: 제1인산암모늄 ($\\text{NH}_4\\text{H}_2\\text{PO}_4$), 담홍색, A.B.C급화재  ",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c107",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "분말 소화약제 저장용기 (충전비)",
+  "body": "  제1종: $0.8\\ [\\ell/\\text{kg}]$  \n  제2·3종: $1\\ [\\ell/\\text{kg}]$  \n  제4종: $1.25\\ [\\ell/\\text{kg}]$  ",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c108",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "저장용기에 설치하는 안전밸브",
+  "body": "  가압식: 최고사용압력의 1.8배 이하\n  축압식: 내압시험압력의 0.8배 이하",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c109",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "☆ 정압 작동장치",
+  "body": "  저장용기의 **내부압력이 설정압력**에 도달하면, **주밸브 개방**  \n  **전기식(시한릴레이식), 기계식, 가스압력식(압력스위치식)**이 있음.",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c110",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "가압용 가스용기",
+  "body": "  가압용 가스용기 → $2.5\\ [\\text{MPa}]$ (할론 2.0) 이하의 압력에서 조정 가능한 압력조정기를 설치해야 한다 (약제용기 폭발 방지).",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c111",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "\\* 기동가스용기의 용량",
+  "body": "| 1kg 마다 | $\\text{N}_2$ | $\\text{CO}_2$ |\n|---|---|---|\n| 가압식 | 40 ℓ | 20 g |\n| 축압식 | 10 ℓ | 〃 (20 g, 병합 셀) |\n\n  > ⚠️ 검수: 위 표의 값(N₂ 40ℓ/10ℓ, CO₂ 20g, 약제 1kg당)은 기준상 **가압용 가스 / 축압용 가스**의 양입니다(가압식 CO₂는 20g에 배관 청소 필요량 가산). 기동용 가스용기 기준(5ℓ 이상 / 0.6kg 이상 등)과는 다릅니다 (원문: 기동가스용기의 용량)\n\n  약제량 × 표준치 = 총 기동가스 용량",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "1kg 마다",
+     "$\\text{N}_2$",
+     "$\\text{CO}_2$"
+    ],
+    "rows": [
+     [
+      "가압식",
+      "40 ℓ",
+      "20 g"
+     ],
+     [
+      "축압식",
+      "10 ℓ",
+      "〃 (20 g, 병합 셀)"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c112",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "① 전역 방출 방식의 소화약제량",
+  "body": "$$W = (V \\times \\alpha) + (A \\times \\beta)$$\n\n| 분말 종류 | α [kg/m³] (× 7.5 →)| β [kg/m²] |\n|---|---:|---:|\n| 제1종 분말 | 0.6 (5 × 0.12) | 4.5 |\n| 제2·3종 분말 | 0.36 (3 × 0.12) | 2.7 |\n| 제4종 분말 | 0.24 (2 × 0.12) | 1.8 |",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "W = (V \\times \\alpha) + (A \\times \\beta)"
+  ],
+  "tables": [
+   {
+    "header": [
+     "분말 종류",
+     "α [kg/m³] (× 7.5 →)",
+     "β [kg/m²]"
+    ],
+    "rows": [
+     [
+      "제1종 분말",
+      "0.6 (5 × 0.12)",
+      "4.5"
+     ],
+     [
+      "제2·3종 분말",
+      "0.36 (3 × 0.12)",
+      "2.7"
+     ],
+     [
+      "제4종 분말",
+      "0.24 (2 × 0.12)",
+      "1.8"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c113",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "② 국소 방출 방식의 소화약제량",
+  "body": "$$W = V\\,[\\text{m}^3] \\times \\left(X - Y\\frac{a}{A}\\right)[\\text{kg/m}^3] \\times 1.1$$\n\n  $V$: 방호공간 체적, $a$: 벽면적, $A$: 방호공간 벽면적\n  - 차고, 주차장은 제3종 분말을 사용해야 함\n  - 방출시간은 모두 30초",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "W = V\\,[\\text{m}^3] \\times \\left(X - Y\\frac{a}{A}\\right)[\\text{kg/m}^3] \\times 1.1"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c114",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 11. 분말 소화설비",
+  "group": "",
+  "title": "(cf) 가스계 소화설비 방출시간 정리",
+  "body": "  - $\\text{CO}_2$\n    전역: 표면 1분, 심부 7분\n    국소: 30초\n  - 할론, 할로겐 – 10초\n  - 불활성기체\n    A, C급: 2분\n    B급: 1분\n  - 분말 – 30초 / 고체에어로졸 – 1분",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c115",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 12. 고체에어로졸 소화설비 (참고만)",
+  "group": "",
+  "title": "고체에어로졸 화합물의 양",
+  "body": ": $m = d \\times V$\n  $m$: 약제량 [g], $d$: 설계 밀도 [g/m³]\n  \\* (설계밀도) = 소화밀도 × 1.3",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c116",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 12. 고체에어로졸 소화설비 (참고만)",
+  "group": "",
+  "title": "소킹타임 10분 / 방출시간 1분 내 95% 이상",
+  "body": "",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c117",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 12. 고체에어로졸 소화설비 (참고만)",
+  "group": "",
+  "title": "열안전 이격거리",
+  "body": "  인체 → 약제 방출 시 75℃를 초과하는 온도가 노출되지 않게 이격\n  가연물 → 〃 200℃ 〃 〃\n\n---",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c118",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "제연구역의 구획기준",
+  "body": "  1) 하나의 제연구역의 면적은 $1000\\ \\text{m}^2$ 이내\n  2) 거실과 통로는 각각 제연구획할 것\n  3) 통로간의 제연구역은 보행중심선의 길이가 60 m를 초과하지 않을 것\n  4) 하나의 제연구역은 직경 60 m 원 내에 들어갈 수 있을 것 / (각층 1개씩 구획)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c119",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "제연구역 구획 시 설치기준 (보, 제연경계벽, 벽)",
+  "body": "  → 제연경계는 폭 0.6 m 이상, 수직거리는 2 m 이내  \n  / 단 구조상 불가피한 경우 2 m를 초과할 수 있다 (대신 배출량 UP)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c120",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "① 바닥면적 400 m² 미만의 거실제연의 배출량 (소규모 거실)",
+  "body": "$$Q\\,[\\text{CMH}] = A\\,[\\text{m}^2] \\times 1\\,[\\text{CMM}] \\times 60\\left[\\frac{\\text{min}}{\\text{hr}}\\right]$$\n\n  \\* 최소 배출량: $5000\\ [\\text{CMH}]$, $83.33\\ [\\text{CMM}]$ 이상",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q\\,[\\text{CMH}] = A\\,[\\text{m}^2] \\times 1\\,[\\text{CMM}] \\times 60\\left[\\frac{\\text{min}}{\\text{hr}}\\right]"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c121",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "② 바닥면적 400 m² 이상의 거실제연의 배출량 (대규모 거실)",
+  "body": "  **1) 직경 40 m인 원 안에 있는 경우: $40000\\ [\\text{CMH}]$ 이상**\n\n  \\* 수직거리에 따라 배출량 보정\n\n| 수직거리 | 배출량 |\n|---|---|\n| 2 m 이하 | $40000\\ [\\text{CMH}]$ 이상 |\n| 2 m 초과 2.5 m 이하 | $45000\\ [\\text{CMH}]$ 이상 |\n| 2.5 m 초과 3 m 이하 | $50000\\ [\\text{CMH}]$ 이상 |\n| 3 m 초과 | $60000\\ [\\text{CMH}]$ 이상 |\n\n  _(표 옆 표기: 수직거리 행 사이 \"0.5\" 2개(0.5 m씩 증가), 배출량 증가분 \"+5000\", \"+5000\", \"+10000\")_\n\n ![제연경계의 치수: 천장에서 경계 하단까지 0.6 m 이상, 경계 하단에서 바닥까지 수직거리 2 m 이상](images-gpt/p08_smoke_boundary_dimensions.svg)\n\n\n  **2) 직경 40 m인 원 밖에 있는 경우: $45000\\ [\\text{CMH}]$ 이상**\n\n  \\* 수직거리에 따라 배출량 보정 → 위 표와 수직거리 기준은 같고  \n  $45000 \\xrightarrow{+5\\text{k}} 50000 \\xrightarrow{+5\\text{k}} 55000 \\xrightarrow{+10\\text{k}} 65000$ 이상\n\n  **3) 통로인 경우 2)와 같음 ($45000\\ [\\text{CMH}]$ 이상, $+5\\text{K}$, $+5\\text{K}$, $+10\\text{K}$)**\n\n  **4) 공동예상제연 구역을 동시에 배출할 때 (댐퍼 없음) 배출량**\n  → 각각 벽으로 구획된 경우 전체 합친 배출량으로 한다  \n  (단 $400\\ \\text{m}^2$ 미만이면, 최소 $5000\\ \\text{CMH}$ 이상, 수직거리가 다르면 긴 거 기준으로)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "수직거리",
+     "배출량"
+    ],
+    "rows": [
+     [
+      "2 m 이하",
+      "$40000\\ [\\text{CMH}]$ 이상"
+     ],
+     [
+      "2 m 초과 2.5 m 이하",
+      "$45000\\ [\\text{CMH}]$ 이상"
+     ],
+     [
+      "2.5 m 초과 3 m 이하",
+      "$50000\\ [\\text{CMH}]$ 이상"
+     ],
+     [
+      "3 m 초과",
+      "$60000\\ [\\text{CMH}]$ 이상"
+     ]
+    ]
+   }
+  ],
+  "images": [
+   "images-gpt/p08_smoke_boundary_dimensions.svg"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c122",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "배출구의 위치",
+  "body": "  1) 소규모 거실 (400 m² 미만) + 벽 구획: 천장 또는 반자와 바닥 사이의 중간 윗부분에 설치\n  2) 그 외 (소규모 거실 + 제연경계, 대규모 거실): 천장·반자 또는 이에 가까운 벽\n  3) 예상제연 구역의 각 부분으로부터 하나의 배출구까지의 수평거리는 10 m 이내가 되도록 해야 한다.",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c123",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "공기유입구의 위치 (강제유입 또는 자연유입 방식)",
+  "body": "  1) 소규모 거실 (400 m² 미만): 공기유입구와 배출구간의 직선거리는 5 m 이상 또는 구획된 실의 장변의 1/2 이상으로 벌릴 것\n  \\* 단 공연장, 집회장, 위락시설의 바닥면적이 $200\\ \\text{m}^2$를 초과하는 경우 → 대규모 거실 기준 적용 (사람이 많아서 위험함)\n  2) 대규모 거실 (400 m² 이상): 바닥으로부터 1.5 m 이하 높이에 설치\n  3) 예상제연구역에 유입되는 순간 풍속은 5 m/s 이하 / 구조상 바닥에 설치하는 경우 1 m/s 이하가 되어야 함\n  4) 공기유입구의 크기는 1 [CMM] 당 35 [cm²] 이상으로 해야 한다.",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c124",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "배출기 및 배출풍도",
+  "body": "  1) 캔버스는 내열성, 전동기와 배풍기는 분리설치, 배풍기도 내열처리\n\n  2) 배출기 흡입측(오른쪽) 풍도안의 풍속은 15m/s 이하, 배출측(왼쪽⟨?⟩) 풍속은 20m/s 이하로 할 것 (유입 풍도의 풍속은 20m/s)\n\n  3) 배출 풍도 강판의 두께 ★\n\n| 직경 | 450mm 이하 | 750mm 이하 | 1500mm 이하 | 2250mm 이하 | 2250mm 초과 |\n|---|---|---|---|---|---|\n| 두께 | 0.5mm | 0.6mm | 0.8mm | 1mm | 1.2mm |\n\n  _(표 위 화살표 표기(직경 증가분): 300, 750, 750, 초과 / 표 아래 화살표 표기(두께 증가분): 0.1, 0.2, 0.2, 0.2 [mm])_\n\n  ![p09_exhaust_duct](images-gpt/p09_exhaust_duct.png)\n\n  _(그림: 배출 풍도 계통도. 좌측 송풍기 20m/s, 흡입구 10m/s, 5m/s, 1m/s 표기, 중간 15m/s, 우측 출구 20m/s, 옆에 \"풍속기준 요약그림.\" 표기)_",
+  "star": true,
+  "review": true,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "직경",
+     "450mm 이하",
+     "750mm 이하",
+     "1500mm 이하",
+     "2250mm 이하",
+     "2250mm 초과"
+    ],
+    "rows": [
+     [
+      "두께",
+      "0.5mm",
+      "0.6mm",
+      "0.8mm",
+      "1mm",
+      "1.2mm"
+     ]
+    ]
+   }
+  ],
+  "images": [
+   "images-gpt/p09_exhaust_duct.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c125",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "설치 제외",
+  "body": ": 화장실·목욕실·주차장·발코니를 설치한 숙박시설(가족호텔 및 휴양콘도미니엄)의 객실과 사람이 상주하지 않는 기계실·전기실·공조실·50m² 미만의 창고 등으로 사용되는 부분은 제외가능.",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c126",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "1. 거실제연",
+  "title": "③ 송풍기의 동력",
+  "body": "$$P\\ [\\mathrm{kW}] = \\frac{P_t \\times Q}{102 \\times \\eta} \\times k$$\n\n  _(분모 102에 원 표시)_\n\n  $P_t$: 풍압 $[\\mathrm{mmAq},\\ \\mathrm{kPa}]$  \n  $Q$: 풍량 $[\\mathrm{m^3/s}]$  \n  $P_t$가 mmAq일 때 102,  \n  $P_t$가 kPa일 때 \n  $101{.}325\\ \\mathrm{kPa} = 10{,}332\\ \\mathrm{mmAq}$, $1\\ \\mathrm{kPa} = 102\\ \\mathrm{mmAq}$",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "P\\ [\\mathrm{kW}] = \\frac{P_t \\times Q}{102 \\times \\eta} \\times k"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c127",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "제연방식",
+  "body": "  제연방식: ① 부속실만 ② 계단실만 ③ 부속실 + 계단실",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c128",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "차압 기준",
+  "body": "  1) 최소차압($\\Delta P$)는 40 Pa 이상 (스프링클러가 설치된 경우 12.5 Pa 이상)\n  2) 출입문 개방에 필요한 힘은 110 N 이하\n  3) 출입문이 2개 이상인 경우 안 열린 곳의 차압은 기준차압의 70% 이상\n  4) 계단실 + 부속실 동시제연 하는 경우 부속실과 계단실의 압력차이는 5 Pa 이하 (부속실 ≤ 계단실)\n  5) 문을 개방하는데 필요한 힘의 공식 ($F = F_{dc} + F_P$)\n\n$$F_{dc} + K_d \\cdot \\Delta P \\cdot A \\cdot \\frac{W}{2(W-d)}$$\n\n  $F_{dc}$: 원래 문여는데 힘  \n  $k_d$: 마찰계수  \n  $W$: 문의 폭,  \n  $d$: 손잡이–문 끝 (손잡이 위치가 없으면$= 0$)",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "F_{dc} + K_d \\cdot \\Delta P \\cdot A \\cdot \\frac{W}{2(W-d)}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c129",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "급기량",
+  "body": "  급기량: 누설량 + 보충량",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c130",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "누설량",
+  "body": "  누설량: 출입문 틈새로 새어나가는 양.\n\n$$Q\\ [\\mathrm{m^3/s}] = 0.827 \\times A_T \\times \\sqrt{P}$$\n\n  $A$: 틈새 면적, $P$: 기압차 $[\\mathrm{Pa}]$\n\n  1) 병렬일 때: $A_T = A_1 + A_2 + A_3 + \\cdots$\n  2) 직렬일 때: $A_T = \\left(\\dfrac{1}{A_1^2} + \\dfrac{1}{A_2^2} + \\dfrac{1}{A_3^2}\\right)^{-\\frac{1}{2}}$\n  3) 방법: 급기공간 기준으로 가까운 순으로 번호 매기고 제일 먼 문부터 합친다.",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q\\ [\\mathrm{m^3/s}] = 0.827 \\times A_T \\times \\sqrt{P}"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c131",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "보충량",
+  "body": "  보충량 ($Q = AV$, $V$ = 방연풍속)\n\n  1) 부속실만 제연 + 옥내 거실 연결: 0.7 m/s\n  2) 그 외 (부속실만 + 복도연결, 계단실 등): 0.5 m/s",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c132",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "유입공기의 배출 (실내과압 해소)",
+  "body": "  1) 수직풍도에 따른 배출 2) 배출구에 따른 배출 3) 제연설비에 따른 배출\n  ↓ (③) 거실제연설비의 도움",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c133",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "유입공기의 배출공식",
+  "body": "  1) 수직풍도 (높이가 100m 이상인 경우 1.2배) 2) 배출구에 따른 배출\n\n$$Q_N = A_p \\times 2\\ [\\mathrm{m/s}]$$\n\n$$Q_N = A_o \\times 2.5\\ [\\mathrm{m/s}]$$\n\n  $Q_N\\ [\\mathrm{m^3/s}]$: 1개 제연문 넓이 × 방연풍속\n  $*\\ Q_{배} = Q_{보}$\n  $A_p$, $A_o$: 수직풍도, 배출구의 면적",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "Q_N = A_p \\times 2\\ [\\mathrm{m/s}]",
+   "Q_N = A_o \\times 2.5\\ [\\mathrm{m/s}]"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c134",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "급기풍도 내 풍속",
+  "body": "  급기풍도 내 풍속: 15m/s 이하 (cf. 거실: 20m/s, 특피: 15m/s)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c135",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 13. 제연설비",
+  "group": "2. 특피, 부속실 제연",
+  "title": "급기송풍기의 능력",
+  "body": "  급기송풍기의 능력: 제연구역 급기량 × 1.15배 이상 (+15%)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c136",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 14. 연결송수관 설비",
+  "group": "",
+  "title": "송수구",
+  "body": "  1) 설치높이: 0.5m 이상 1m 이하 (소방관 사용높이)\n  2) 구경: 65mm 쌍구형 (옥내소화전만 65mm 쌍, 단구형 사용가능)\n  3) 부속품: (습식) 송수구 – 자동배수밸브 – 체크밸브\n    (건식) 송수구 – 자동배수밸브 – 체크밸브 – 자동배수밸브 (⟨?⟩)",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c137",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 14. 연결송수관 설비",
+  "group": "",
+  "title": "배관",
+  "body": "  1) 주배관은 구경 100mm 이상의 전용배관 / 100mm 이상 옥내소화전 배관 겸용가능\n  2) 지면으로부터 높이가 31m 이상, 지상 11층 이상인 경우 습식설비로 할 것 → 힘이 딸릴 것 같은 높이 (습식은 고가수조 이용)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c138",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 14. 연결송수관 설비",
+  "group": "",
+  "title": "방수구",
+  "body": "  1) 제외기준: ① 아파트 1, 2층, ② 피난층, ③ 층수 4층 이하, 연면적 6000m² 미만, ④ 지하층 2이하 → ③·④는 옥내소화전 송수구로 대체할 (때)\n  2) 수평거리: 계단으로부터 5m 이내\n  3) 11층 이상의 층은 방수구 쌍구형 / 단, ① 아파트, ② S/P 설치 + 방수구 2개소 이상 설치되면 단구형 가능\n  4) 방수기구함: 보행거리 5m 이내",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c139",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 14. 연결송수관 설비",
+  "group": "",
+  "title": "가압 송수장치 (중계펌프)",
+  "body": "  1) 지표면에서 최상층 방수구의 높이가 70m 이상일 때 설치\n  2) 펌프의 토출량 Q\n\n| 구분 \\ 방수구 수 | 1~3개 | 4개 | 5개 이상 |\n|---|---|---|---|\n| 일반 건축물 | 2400 LPM 이상 | 3200 LPM 이상 | 4000 LPM 이상 |\n| 계단식 아파트 | 1200 LPM 이상 | 1600 LPM 이상 | 2000 LPM 이상 |\n\n  _\\* 1개당 800 LPM, 단 최소 3개, 최대 5개 / 아파트는 1/2_\n\n  3) 노즐 방사압: 0.35 [MPa] (옥내소화전은 0.17 [MPa])",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분 \\ 방수구 수",
+     "1~3개",
+     "4개",
+     "5개 이상"
+    ],
+    "rows": [
+     [
+      "일반 건축물",
+      "2400 LPM 이상",
+      "3200 LPM 이상",
+      "4000 LPM 이상"
+     ],
+     [
+      "계단식 아파트",
+      "1200 LPM 이상",
+      "1600 LPM 이상",
+      "2000 LPM 이상"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c140",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 15. 연결살수설비 (지하가나 지하층 설치)",
+  "group": "",
+  "title": "송수구",
+  "body": "  1) 설치높이: 소방관 사용높이\n  2) 가연성 탱크의 경우 20m 이격, 또는 높이 1.5m 이상, 폭 2.5m 이상 철근콘크리트 벽\n  3) 구경: 65mm 쌍구형, 단 살수헤드 10개 이하인 것은 단구형으로 가능 (전용헤드…)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c141",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 15. 연결살수설비 (지하가나 지하층 설치)",
+  "group": "",
+  "title": "배관 (개방형 전용헤드 사용시)",
+  "body": "| 전용헤드 수 | 1개 | 2개 | 3개 | 4, 5개 | 6~10개 |\n|---|---|---|---|---|---|\n| 배관 구경(mm) | 32 | 40 | 50 | 65 | 80 |\n\n  _\\* 스프링클러 헤드 사용시 스프링클러 배관기준 적용_  \n  _\\* 수평주행배관의 기울기 1/100 이상_",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "전용헤드 수",
+     "1개",
+     "2개",
+     "3개",
+     "4, 5개",
+     "6~10개"
+    ],
+    "rows": [
+     [
+      "배관 구경(mm)",
+      "32",
+      "40",
+      "50",
+      "65",
+      "80"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c142",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 15. 연결살수설비 (지하가나 지하층 설치)",
+  "group": "",
+  "title": "헤드",
+  "body": "  1) 헤드 수평거리  \n    연살 전용헤드: R = 3.7m 이하  \n    S/P 겸용헤드: R = 2.3m 이하\n\n$$S = 2R\\cos 45^\\circ$$\n\n  _(cf. 연소방지설비: 전용 2m, S/P 1.5m)_\n\n  2) 가연성 가스 취급시설의 연살 전용헤드 상호간거리 S = 3.7m 이하\n\n---",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "S = 2R\\cos 45^\\circ"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c143",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 16. 연소방지설비 (지하구 설치)",
+  "group": "",
+  "title": "배관",
+  "body": ": 연결살수설비 (헤드수–배관경) 표와 동일\n  교차배관 구경은 최소 40mm 이상 (S/P 기준과 동일)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c144",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 16. 연소방지설비 (지하구 설치)",
+  "group": "",
+  "title": "헤드",
+  "body": ": 천장 또는 벽면 설치, 헤드간 수평거리 (S값, R값이 아님)\n  전용헤드 : 2m 이하, 개방형 스프링클러헤드 : 1.5m 이하",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c145",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 16. 연소방지설비 (지하구 설치)",
+  "group": "",
+  "title": "살수구역",
+  "body": ": 환기구·작업구 양옆 3m 범위의 살수구역 생성.\n  단 환기구 사이 간격이 700m를 초과하는 경우 700m 마다 살수구역을 설정.\n  \\*지하구 크기 : 폭 1.8m 이상, 높이 2m 이상, 길이 50m 이상.",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c146",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 17. 피난 구조설비 (피난기구, 인명구조기구)",
+  "group": "1. 피난기구",
+  "title": "1. 피난기구",
+  "body": "| 구분 | 1층 | 2층 | 3층 | 4층 이상 10층 이하 |\n|---|---|---|---|---|\n| 노유자시설 | 미끄럼대 · 구조대 · 피난교 · 다수인 피난장비 · 승강식 피난기 | 미끄럼대 · 구조대 · 피난교 · 다수인 피난장비 · 승강식 피난기 | 미끄럼대 · 구조대 · 피난교 · 다수인 피난장비 · 승강식 피난기 | 구조대* · 피난교 · 다수인 피난장비 · 승강식 피난기 |\n| 의료시설 · 근린생활시설 | – | – | 미끄럼대 · 구조대 · 피난교 · 피난용트랩 · 다수인 피난장비 · 승강식 피난기 | 구조대 · 피난교 · 다수인 피난장비 · 승강식 피난기 · 피난용 트랩 |\n| 그 밖의 것 | | | 미끄럼대 · 구조대 · 다수인 피난장비 · 승강식 피난기 · 완강기 · 간이 완강기* · 공기안전매트* · 피난교 · 피난 사다리 · 피난용 트랩 | 구조대 · 다수인 피난장비 · 승강식 피난기 · 완강기 · 간이 완강기* · 공기안전매트* · 피난교 · 피난 사다리 |\n\n\\* **4~10층의 노유자시설 구조대** → 장애인 관련시설, 스스로 피난불가한 자가 있는 경우  \n\\* **간이 완강기(3, 4~10층)** → 숙박시설의 객실  \n\\* **공기안전매트(3, 4~10층)** → 공동주택  \n\n  **★★요약★★**  \n  **그밖의 것(3층)** : 다미피(×3)구 완승공간 → (4~10층) 미끄럼대 · 피난용 트랩 ← 빠짐  \n  **의료시설·근생(3층)** : 다미피(×2)구승 → (4~10층) 미끄럼대 ← 빠짐  \n  **노유자시설(1, 2, 3층)** : 다미피구승 → (4~10층) 미끄럼대 ← 빠짐  ",
+  "star": true,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "구분",
+     "1층",
+     "2층",
+     "3층",
+     "4층 이상 10층 이하"
+    ],
+    "rows": [
+     [
+      "노유자시설",
+      "미끄럼대 · 구조대 · 피난교 · 다수인 피난장비 · 승강식 피난기",
+      "미끄럼대 · 구조대 · 피난교 · 다수인 피난장비 · 승강식 피난기",
+      "미끄럼대 · 구조대 · 피난교 · 다수인 피난장비 · 승강식 피난기",
+      "구조대* · 피난교 · 다수인 피난장비 · 승강식 피난기"
+     ],
+     [
+      "의료시설 · 근린생활시설",
+      "–",
+      "–",
+      "미끄럼대 · 구조대 · 피난교 · 피난용트랩 · 다수인 피난장비 · 승강식 피난기",
+      "구조대 · 피난교 · 다수인 피난장비 · 승강식 피난기 · 피난용 트랩"
+     ],
+     [
+      "그 밖의 것",
+      "",
+      "",
+      "미끄럼대 · 구조대 · 다수인 피난장비 · 승강식 피난기 · 완강기 · 간이 완강기* · 공기안전매트* · 피난교 · 피난 사다리 · 피난용 트랩",
+      "구조대 · 다수인 피난장비 · 승강식 피난기 · 완강기 · 간이 완강기* · 공기안전매트* · 피난교 · 피난 사다리"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c147",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 17. 피난 구조설비 (피난기구, 인명구조기구)",
+  "group": "1. 피난기구",
+  "title": "피난기구 설치개수 (층마다 설치)",
+  "body": "| 용도 | 피난기구 설치개수 |\n|---|---|\n| 숙박시설 · 노유자시설 · 의료시설 (숙노의) | 바닥면적 500㎡ 마다 1개 이상 |\n| 위락시설 · 문화집회시설 · 운동시설, 판매시설 또는 복합용도의 층 (위문운판복) | 바닥면적 800㎡ 마다 1개 이상 |\n| 그 밖의 용도의 층 | 바닥면적 1000㎡ 마다 1개 이상 |\n| 계단실형 아파트 | 각 세대 마다 |\n\n  \\* 숙박시설(휴양콘도미니엄 제외) : 객실마다 완강기 1 or 간이완강기 ×2 추가설치  \n  \\* 노유자시설(4층 이상) → 구조대 1개 추가설치 (장애인, 스스로 피난 불가의 경우)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "용도",
+     "피난기구 설치개수"
+    ],
+    "rows": [
+     [
+      "숙박시설 · 노유자시설 · 의료시설 (숙노의)",
+      "바닥면적 500㎡ 마다 1개 이상"
+     ],
+     [
+      "위락시설 · 문화집회시설 · 운동시설, 판매시설 또는 복합용도의 층 (위문운판복)",
+      "바닥면적 800㎡ 마다 1개 이상"
+     ],
+     [
+      "그 밖의 용도의 층",
+      "바닥면적 1000㎡ 마다 1개 이상"
+     ],
+     [
+      "계단실형 아파트",
+      "각 세대 마다"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c148",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 17. 피난 구조설비 (피난기구, 인명구조기구)",
+  "group": "1. 피난기구",
+  "title": "피난기구 설치감소 (1/2 감소)",
+  "body": "  1) 주요구조부 내화구조 and 2) 피난계단 또는 특피계단이 2이상 설치",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c149",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 17. 피난 구조설비 (피난기구, 인명구조기구)",
+  "group": "2. 인명구조기구",
+  "title": "2. 인명구조기구",
+  "body": "| 특정소방대상물 | 인명구조기구 | 설치수량 |\n|---|---|---|\n| 지하층 포함<br>5층 이상인 병원<br>7층 이상인 관광호텔<br>(5병, 7호) | · 방열복 또는 방화복<br>· 공기호흡기<br>· 인공소생기 | 각 2개 이상<br>(병원은 인공소생기 설치 제외가능)<br>(층마다 ×) |\n| 100명 이상 영화상영관<br>대규모 점포, 지하역사, 지하상가<br>(판매시설 미비⟨?⟩) | · 공기호흡기 | 층마다 2개 이상 |\n| 이산화탄소 소화설비를 설치해야 하는 특정소방대상물 | · 공기호흡기 | 출입구 외부 인근에 1개 이상 |",
+  "star": false,
+  "review": true,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "특정소방대상물",
+     "인명구조기구",
+     "설치수량"
+    ],
+    "rows": [
+     [
+      "지하층 포함<br>5층 이상인 병원<br>7층 이상인 관광호텔<br>(5병, 7호)",
+      "· 방열복 또는 방화복<br>· 공기호흡기<br>· 인공소생기",
+      "각 2개 이상<br>(병원은 인공소생기 설치 제외가능)<br>(층마다 ×)"
+     ],
+     [
+      "100명 이상 영화상영관<br>대규모 점포, 지하역사, 지하상가<br>(판매시설 미비⟨?⟩)",
+      "· 공기호흡기",
+      "층마다 2개 이상"
+     ],
+     [
+      "이산화탄소 소화설비를 설치해야 하는 특정소방대상물",
+      "· 공기호흡기",
+      "출입구 외부 인근에 1개 이상"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c150",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 18. 소화용수 설비",
+  "group": "",
+  "title": "설치 대상",
+  "body": ": 대지경계선으로부터 180m 이내 지름 75mm 이상인 상수도용 배수관이 설치되지 않은 지역",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c151",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 18. 소화용수 설비",
+  "group": "",
+  "title": "상수도 소화용수 설비",
+  "body": ": 배관 : 75mm 이상, 소화전 : 100mm 이상,\n  위치 : 투영면적 각 부분으로부터 140m 이하에 설치",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c152",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 18. 소화용수 설비",
+  "group": "",
+  "title": "소화수조 및 저수조",
+  "body": ": 저수량 $= \\dfrac{\\text{연면적}}{\\text{기준면적}} \\times 20\\,[\\text{m}^3]$ (소수점 올림)\n\n  \\*기준면적\n  1) 1,2층 바닥면적 합계가 15000㎡ 이상 : 7500㎡\n  2) 창고시설 : 5000㎡\n  3) 그 외 : 12500㎡",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c153",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 18. 소화용수 설비",
+  "group": "",
+  "title": "가압송수장치 (소화수조 중계펌프)",
+  "body": ": 소화수조 깊이가 4.5m 이상일 때\n\n| 저수량 | 양수량 | 채수구 수 |\n|---|---|---|\n| ① 20㎥ 이상 | 1100 [L/min] | 1개 |\n| ② 40, 60, 80㎥ 이하 | 2200 [L/min] | 2개 |\n| ③ 100㎥ 이상 | 3300 [L/min] | 3개 |",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [
+   {
+    "header": [
+     "저수량",
+     "양수량",
+     "채수구 수"
+    ],
+    "rows": [
+     [
+      "① 20㎥ 이상",
+      "1100 [L/min]",
+      "1개"
+     ],
+     [
+      "② 40, 60, 80㎥ 이하",
+      "2200 [L/min]",
+      "2개"
+     ],
+     [
+      "③ 100㎥ 이상",
+      "3300 [L/min]",
+      "3개"
+     ]
+    ]
+   }
+  ],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c154",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 18. 소화용수 설비",
+  "group": "",
+  "title": "흡수구",
+  "body": "  1) 20, 40, 60㎥ : 1개\n  2) 80, 100㎥ 이상 : 2개\n  흡수구 기준 : 한변이 0.6m 이상 사각형 또는 직경 0.6m 이상 원형\n\n  \\* 주변에 800 [L/min]의 유수가 있는 경우 소화수조 설치 안 할 수 있다.",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c155",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 19. 창고시설의 화재안전기준",
+  "group": "",
+  "title": "소화기구 및 자동소화장치",
+  "body": ": 배전반 및 분전반 마다 가스, 분말, 고체에어로졸 자동소화장치 또는 소공간용 소화용구 설치",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c156",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 19. 창고시설의 화재안전기준",
+  "group": "",
+  "title": "옥내소화전설비",
+  "body": ":\n  $Q = N \\times 130\\,[\\text{L/min}] \\times 40\\,[\\text{min}]$ (N : 최대 2개)",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ },
+ {
+  "id": "c157",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 19. 창고시설의 화재안전기준",
+  "group": "",
+  "title": "스프링클러설비 (라지드롭형 스프링클러 헤드 + 습식)",
+  "body": "  1) $Q = N \\times 160\\,[\\text{L/min}] \\times 20\\,[\\text{min}]$ : 일반창고 (N : 최대 30개)\n  2) $Q = N \\times 160\\,[\\text{L/min}] \\times 60\\,[\\text{min}]$ : 랙식창고\n  3) 랙식 창고의 랙높이 / 3m 마다 헤드설치\n  ex) 8/3 ≒ 3 ∴ 3 × 20개 설치\n  ![p10_rack_warehouse](images-gpt/p10_rack_warehouse.png)\n\n  _(그림: 랙식 창고 단면, 3m 단마다 헤드 1줄 20개)_\n  4) 한쪽 가지배관의 헤드수 최대 4개 이하 (일반 S/P는 8개 이하)\n  5) 수평거리 R\n    특수가연물 창고 : 1.7m 이하\n    창고 : 2.1m 이하\n    내화구조 창고 : 2.3m 이하",
+  "star": false,
+  "review": false,
+  "formulas": [],
+  "tables": [],
+  "images": [
+   "images-gpt/p10_rack_warehouse.png"
+  ],
+  "aiNotes": []
+ },
+ {
+  "id": "c158",
+  "part": "Part 2. 소화설비",
+  "chapter": "ch 19. 창고시설의 화재안전기준",
+  "group": "",
+  "title": "소화수조 및 저수조",
+  "body": "$$\n\\text{저수량 [m}^3\\text{]} = \\frac{\\text{연면적}}{5000\\,[\\text{m}^2]} \\times 20\\,[\\text{m}^3]\n$$",
+  "star": false,
+  "review": false,
+  "formulas": [
+   "\\text{저수량 [m}^3\\text{]} = \\frac{\\text{연면적}}{5000\\,[\\text{m}^2]} \\times 20\\,[\\text{m}^3]"
+  ],
+  "tables": [],
+  "images": [],
+  "aiNotes": []
+ }
+]

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">표면화재의 α, β</title>
+  <desc id="desc">최저한도 머리글 아래 V·α. 최저한도 열의 첫 두 데이터 행을 병합하여 45 kg (1병) 표시. 45의 4와 135의 3에 파란 원을 그리고 각각 아래로 두 갈래 화살표 표시. β는 네 행 공통 5 kg/m².</desc>
+  <rect width="1200" height="600" fill="#fff"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif" fill="#17212b">
+    <text x="36" y="48" font-size="29" font-weight="700">표면화재의 α, β</text>
+    <text x="36" y="83" font-size="20">단, 설계농도(34% 이상)에 따라 보정계수 적용</text>
+    <rect x="36" y="108" width="1128" height="106" fill="#eef1f4"/>
+    <g stroke="#59636e" stroke-width="1.5" fill="none">
+      <rect x="36" y="108" width="1128" height="466"/>
+      <path d="M36 214H1164 M36 304H690 M36 394H954 M36 484H954"/>
+      <path d="M446 108V574 M690 108V574 M954 108V574"/>
+    </g>
+    <g text-anchor="middle" font-size="22">
+      <g font-weight="700">
+        <text x="241" y="169">방호구역의 체적</text>
+        <text x="568" y="151">α</text>
+        <text x="568" y="183" font-size="18">(체적 [m³]당 약제량)</text>
+        <text x="822" y="151">최저한도 [kg]</text>
+        <text x="822" y="187" font-size="23" font-weight="400">V·α</text>
+        <text x="1059" y="151">β</text>
+        <text x="1059" y="183" font-size="18">(개구부 가산량)</text>
+      </g>
+      <text x="241" y="267">45 [m³] 미만</text>
+      <text x="241" y="357">45 [m³] 이상 150 [m³] 미만</text>
+      <text x="241" y="447">150 [m³] 이상 1450 [m³] 미만</text>
+      <text x="241" y="537">1450 [m³] 이상</text>
+      <text x="568" y="267">1 [kg/m³]</text>
+      <text x="568" y="357">0.9 [kg/m³]</text>
+      <text x="568" y="447">0.8 [kg/m³]</text>
+      <text x="568" y="537">0.75 [kg/m³]</text>
+      <text x="1059" y="402" font-size="27">5 kg/m²</text>
+    </g>
+    <g font-size="26">
+      <text y="285"><tspan x="766">4</tspan><tspan x="794">5</tspan><tspan x="816" font-size="22"> kg (1병)</tspan></text>
+      <text y="446"><tspan x="738">1</tspan><tspan x="766">3</tspan><tspan x="794">5</tspan><tspan x="816" font-size="22"> kg (3병)</tspan></text>
+      <text y="542"><tspan x="738">1</tspan><tspan x="766">1</tspan><tspan x="794">2</tspan><tspan x="822">5</tspan><tspan x="844" font-size="20"> kg (25병)</tspan></text>
+    </g>
+    <g fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="774" cy="276" rx="17" ry="21"/>
+      <ellipse cx="774" cy="437" rx="17" ry="21"/>
+      <path d="M774 297V328 M774 328L746 412 M774 328V412"/>
+      <path d="M742 402L746 412L755 405 M767 403L774 412L781 403"/>
+      <path d="M774 458V469 M774 469V508 M774 469L802 508"/>
+      <path d="M767 499L774 508L781 499 M791 504L802 508V497"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">제연경계와 바닥 사이의 수직거리</title>
+  <desc id="desc">원본 PDF 8쪽 도해를 다시 그린 그림. 천장에서 제연경계 하단까지 0.6 m 이상, 제연경계 하단에서 바닥까지 수직거리 2 m 이상.</desc>
+  <rect width="900" height="560" fill="#fff"/>
+  <g font-family="'Malgun Gothic', 'Noto Sans KR', sans-serif" fill="#222">
+    <path d="M130 100H710 M130 470H710" fill="none" stroke="#222" stroke-width="4"/>
+    <rect x="300" y="100" width="26" height="110" fill="#e5e7eb" stroke="#222" stroke-width="3"/>
+    <text x="730" y="108" font-size="25">천장</text>
+    <text x="730" y="478" font-size="25">바닥</text>
+    <text x="148" y="266" font-size="25">제연경계</text>
+    <path d="M255 247L306 200" fill="none" stroke="#555" stroke-width="2"/>
+    <g fill="none" stroke="#777" stroke-width="1.5" stroke-dasharray="6 5">
+      <path d="M338 210H445"/>
+    </g>
+    <g fill="none" stroke="#222" stroke-width="2">
+      <path d="M420 110V200 M420 220V460"/>
+      <path d="M413 119L420 106L427 119 M413 191L420 204L427 191"/>
+      <path d="M413 229L420 216L427 229 M413 451L420 464L427 451"/>
+    </g>
+    <text x="455" y="164" font-size="27">0.6 m 이상</text>
+    <text x="455" y="333" font-size="25">수직거리</text>
+    <text x="455" y="373" font-size="27">2 m 이상</text>
+  </g>
+</svg>
